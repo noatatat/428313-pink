@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Воробьев](https://up.htmlacademy.ru/adaptive/12/user/428313).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Калинин](https://up.htmlacademy.ru/adaptive/12/user/311377).
 
 ---
 

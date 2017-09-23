@@ -2,170 +2,185 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink: HTML Academy</title>
   </head>
   <body>
-    <header class="">
-      <a class="" href="#">
-        <img src="http://placehold.it/75x22" width="75px" height="22px">
-      </a>
-      <nav class="">
-        <ul class="">
-          <li class="">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="">
-            <a href="contest.html">Конкурс</a>
-          </li>
-          <li class="">
-            <a href="academy.html">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип сервиса Pink">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="contest.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="academy.html">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
+
+    <main class="main-page">
       <h1 class="visually-hidden">Страница приложения Pink</h1>
-      <section class="">
-        <div class="">
-          <a class="" href="">
-            <img src="http://placehold.it/320x395" width="320px" height="395px">
+
+      <section class="download-app">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <div class="download-app__picture">
+          <a class="download-app__picture-link" href="#">
+            <img class="download-app__image" src="http://placehold.it/320x395" width="320" height="395" alt="Pink на вашем устройстве">
           </a>
         </div>
-        <a class=" button" href="">
-          Скачать приложение
-        </a>
-        <ul class="">
-          <li class="">
+        <p class="download-app__button-block">
+          <a class="download-app__button button" href="">Скачать приложение</a>
+        </p>
+        <ul class="download-app__market-list">
+          <li class="download-app__item download-app__item--itunes">
             <a href="https://www.apple.com/ru/itunes/">iTunes</a>
           </li>
-          <li class="">
+          <li class="download-app__item download-app__item--google-play">
             <a href="https://play.google.com/">Google Play</a>
           </li>
-          <li class="">
+          <li class="download-app__item download-app__item--microsoft-store">
             <a href="https://www.microsoft.com/ru-ru/store/apps/">
               Microsoft Store</a>
           </li>
         </ul>
-        <p class="">
+        <p class="download-app__text">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
-      <section class="">
+
+      <section class="feature">
         <h2 class="visually-hidden">Характеристки приложения</h2>
-        <div class="">
-          <p class="">Устали от серости мегаполиса?</p>
-          <p class="">Нам есть, что вам предложить!</p>
+        <div class="feature__intro-container">
+          <p class="feature__intro-text">Устали от серости мегаполиса?</p>
+          <p class="feature__intro-text">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="">
-          <li class="">
-            <h3 class="">Поднимает настроение</h3>
-            <p class="">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <h3 class="feature__title">Поднимает настроение</h3>
+            <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="">
-            <h3 class="">Меняет мир вокруг</h3>
-            <p class="">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="feature__item">
+            <h3 class="feature__title">Меняет мир вокруг</h3>
+            <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="">
-            <h3 class="">Заводит новых друзей</h3>
-            <p class="">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="feature__item">
+            <h3 class="feature__title">Заводит новых друзей</h3>
+            <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="">
-          <img src="http://placehold.it/157x320" width="157px" height="320px">
+        <div class="feature__image">
+          <!--ФОНОВОЕ ПУСТЬ БУДЕТ?
+          <img src="http://placehold.it/157x320" width="157" height="320">-->
         </div>
       </section>
-      <section class="">
+      <section class="review">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="slider">
-          <blockquote class="">
-            <cite class="">Николай Петров</cite>
-            <p class="">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="review__list slider">
+          <blockquote class="review__item slider__item">
+            <cite class="review__author">Николай Петров</cite>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <blockquote class="">
-            <cite class="">Николай Петров</cite>
-            <p class="">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <blockquote class="review__item slider__item">
+            <cite class="review__author">Николай Петров</cite>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <blockquote class="">
-            <cite class="">Николай Петров</cite>
-            <p class="">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <blockquote class="review__item slider__item">
+            <cite class="review__author">Николай Петров</cite>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
       </section>
-      <section class="">
+      <section class="tariff">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="slider">
-          <ul class="">
-            <li class="">
-              Стандарт 3,99 USD
-              <div>Хит</div>
+        <div class="tariff__list slider">
+          <ul class="tariff__item slider__item">
+            <li class="tarif__rate">
+              <a class="tariff__link" href="#">
+                <span class="tariff_name">Стандарт</span>
+                <span class="tariff_price">3,99 USD</span>
+                <div class="tariff_label">Хит</div>
+              </a>
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--avaliable">
               Розовый фильтр
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--avaliable">
               Смайлики
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--not-avaliable">
               Комментарии
             </li>
           </ul>
-<!----------------------------------------------------->
-          <ul class="">
-            <li class="">
-              Стандарт 3,99 USD
-              <div>Хит</div>
+          <ul class="tariff__item slider__item">
+            <li class="tarif__rate">
+              <a class="tariff__link" href="#">
+                <span class="tariff_name">Стандарт</span>
+                <span class="tariff_price">3,99 USD</span>
+                <div class="tariff_label">Хит</div>
+              </a>
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--avaliable">
               Розовый фильтр
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--avaliable">
               Смайлики
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--not-avaliable">
               Комментарии
             </li>
           </ul>
-          <ul class="">
-            <li class="">
-              Стандарт 3,99 USD
-              <div>Хит</div>
+          <ul class="tariff__item slider__item">
+            <li class="tarif__rate">
+              <a class="tariff__link" href="#">
+                <span class="tariff_name">Стандарт</span>
+                <span class="tariff_price">3,99 USD</span>
+                <div class="tariff_label">Хит</div>
+              </a>
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--avaliable">
               Розовый фильтр
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--avaliable">
               Смайлики
             </li>
-            <li class="">
+            <li class="tariff__feature tariff__feature--not-avaliable">
               Комментарии
             </li>
           </ul>
-<!----------------------------------------------------->
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-main">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="">Остались вопросы? Свяжитесь с нами!</p>
-      <ul class="">
-        <li class="">
-          <p class="">Звоните:</p>
-          <p class="">+7 (812) 555-66-66</p>
+      <p class="footer-main__text">Остались вопросы? Свяжитесь с нами!</p>
+      <ul class="footer-main__contacts contact">
+        <li class="contact__item">
+          <p class="contact__name">Звоните:</p>
+          <p class="contact__info">+7 (812) 555-66-66</p>
         </li>
-        <li class="">
-          <p class="">Пишите:</p>
-          <p class="">ail@htmlacademy.ru</p>
+        <li class="contact__item">
+          <p class="contact__name">Пишите:</p>
+          <p class="contact__info">mail@htmlacademy.ru</p>
         </li>
-        <li class="">
-          <p class="">Приезжайте в гости:</p>
-          <p class="">ул. Большая Конюшенная, 19/8</p>
+        <li class="contact__item">
+          <p class="contact__name">Приезжайте в гости:</p>
+          <p class="contact__info">ул. Большая Конюшенная, 19/8</p>
         </li>
       </ul>
       <div class="footer__map">
-        <img src="http://placehold.it/320x395" width="320px" height="395px">
+        <img src="http://placehold.it/320x395" width="320" height="395" alt="ул. Большая Конюшенная, 19/8">
       </div>
     </footer>
   </body>

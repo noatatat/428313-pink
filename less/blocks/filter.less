@@ -1,0 +1,92 @@
+.filter {
+  background-color: @background-lite;
+  padding-top: 20px;
+}
+
+.filter__image-upload-block {
+  width: 280px;
+  height: 374px;
+  margin-bottom: 42px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.filter__image-input,
+.filter__option-input {
+  display: none;
+}
+
+.filter__uploader {
+  .local-reset();
+  cursor: pointer;
+}
+
+.filter__image {
+  display: block;
+}
+
+.filter__options {
+  .list-reset();
+  margin: 0 auto;
+  display: flex;
+  flex: row no-wrap;
+  justify-content: space-between;
+  width: 208px;
+  margin-bottom: 40px;
+}
+
+.filter__name {
+  display: block;
+  width: 48px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.filter__name--crop {
+  background: url("../img/icon-editor-crop.svg") 50% 50% no-repeat;
+}
+
+.filter__name--fill {
+  background: url("../img/icon-editor-fill.svg") 50% 0% no-repeat;
+}
+
+.filter__name--contrast {
+  background: url("../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+}
+
+.filter__range {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.filter__scale {
+  height: 2px;
+  width: 240px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.filter__handle {
+  position: absolute;
+  top: -7px;
+  left: 193px;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border: 2px solid @pink-color;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.filter__buttons {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid @border-color;
+}
+
+.filter__button {
+  margin: 12px auto;
+}

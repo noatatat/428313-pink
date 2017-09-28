@@ -25,5 +25,19 @@
 }
 
 .page-header__logo-image {
-  display: block;
+  width: 75px;
+  height: 22px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.page-header__logo[href]  {
+  &:hover .page-header__logo-image,
+  &:focus .page-header__logo-image {
+    background-image: url("../img/logo-pink-white-mobile-pink.svg");
+  }
+  &:active .page-header__logo-image {
+    background-image: url("../img/logo-pink-white-mobile-transparent.svg");
+  }
 }

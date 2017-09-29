@@ -11,7 +11,6 @@
   flex-flow: column wrap;
   align-items: flex-start;
   margin-bottom: 20px;
-
 }
 
 .form__label {
@@ -35,6 +34,7 @@
 
   border: 2px solid @border-color;
   border-radius: 2px;
+
   &::placeholder {
     font-weight: normal;
     font-size: 18px;
@@ -66,7 +66,7 @@
   background-color: @background-lite;
 }
 
-.form__emotion .form__legend{
+.form__emotion .form__legend {
   background-color: white;
   padding-bottom: 12px;
 }
@@ -86,9 +86,9 @@
 
 .form__label-checkbox,
 .form__label-radio-button {
+  .local-reset();
   display: block;
   position: relative;
-  .local-reset();
   margin-bottom: 52px;
 
   font-weight: normal;
@@ -111,8 +111,7 @@
   background-color: white;
 }
 
-.form__input-checkbox:checked +
-.form__label-checkbox::before {
+.form__input-checkbox:checked + .form__label-checkbox::before {
   background-image: url("../img/icon-yes.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -134,8 +133,7 @@
 }
 
 
-.form__input-radio-button:checked +
-.form__label-radio-button::before {
+.form__input-radio-button:checked + .form__label-radio-button::before {
   background-image: url("../img/icon-pink-point.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;

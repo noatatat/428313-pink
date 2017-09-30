@@ -1,6 +1,6 @@
 .feature__intro-container {
   background-color: white;
-  padding: 32px 20px 0 20px;
+  padding: 32px 20px 32px 20px;
 }
 
 .feature__intro-text {
@@ -10,18 +10,23 @@
   padding-bottom: 36px;
 }
 
+.feature__intro-text:last-child {
+  padding-bottom: 0;
+}
+
 .feature__list {
   .list-reset();
-  padding: 36px 20px 0 20px;
+  padding: 36px 20px 41px 20px;
   background-color: @bg-lite;
 }
 
-.feature {
-  color: black;
+.feature__item:not(:last-child) {
+  padding-bottom: 41px;
 }
 
 .feature__title {
   .local-reset();
+  color: black;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 16px;
@@ -29,12 +34,10 @@
 
 .feature__text {
   .local-reset();
-  padding-bottom: 41px;
   color: @basic-color;
 }
 
 .feature__image {
-  width: 100%;
-  height: 277px;
-  background: @bg-lite url("../img/iphone-screen-mobile@1x.png") 50% 0% no-repeat;
+  background-color: @bg-lite;
+  line-height: 0;
 }

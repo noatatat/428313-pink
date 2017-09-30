@@ -1,11 +1,15 @@
 .contact {
   .list-reset();
-  padding: 40px 20px;
+/*  padding: 40px 20px;*/
 }
 
 .contact__name,
 .contact__info {
   .local-reset();
+}
+
+.contact__item:not(:last-child) {
+  padding-bottom: 16px;
 }
 
 .contact__name {
@@ -20,5 +24,4 @@
   line-height: 1.2;
   font-weight: lighter;
   color: @pink-color;
-  padding-bottom: 16px;
-}
+  }

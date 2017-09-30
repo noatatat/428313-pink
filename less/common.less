@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   font-family: "Open Sans", "Arial", sans-serif;
   color: @basic-color;
   font-size: 14px;
@@ -25,6 +26,21 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,4 +54,11 @@ img {
 
 .modal {
   display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+}
+
+@media (min-width: @desktop-width) {
 }

@@ -2,15 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pink: Ваши фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип сервиса Pink">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <!--<div class="page-header__logo-image">-->
+            <span class="visually-hidden">Логотип сервиса Pink</span>
+            <svg  class="page-header__logo-image" version="1" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
+              <path d="M0 1.45C0 .74.58.16 1.256.16h7.18c5.087 0 8.436 2.705 8.436 7.148v.064c0 4.86-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.858 0 22.278 0 21.57V1.45zm8.114 10.978c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.918h5.57zM21.73 1.288C21.73.58 22.307 0 22.982 0c.71 0 1.288.58 1.288 1.288V21.57c0 .71-.578 1.29-1.287 1.29-.676 0-1.255-.58-1.255-1.29V1.29zM30.87 1.32c0-.676.58-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256C47.452.58 47.998 0 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.19-1.158 1.19h-.13c-.547 0-.933-.32-1.32-.77L33.35 4.153v17.45c0 .675-.548 1.255-1.256 1.255-.677 0-1.224-.58-1.224-1.257V1.32zM56.3 1.288C56.3.58 56.88 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.33L71.69.452c.29-.257.58-.45.998-.45.676 0 1.224.612 1.224 1.256 0 .354-.16.644-.42.9l-7.983 7.92 8.563 10.562c.225.29.354.547.354.934 0 .676-.58 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.86v4.895c0 .708-.58 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
+            </svg>
+            <!--</div>-->
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -27,176 +38,207 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
 
-    <main class="photo-page">
-      <h1 class="photo-page__title">Фотографии пользователей</h1>
-      <p class="photo-page__text text-block">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <main class="photo-page">
+        <h1 class="photo-page__title">Фотографии пользователей</h1>
+        <p class="photo-page__text text-block">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
 
-      <section class="photo-page__picture-of-day picture-of-day">
-        <h2 class="picture-of-day__title">Панорама дня</h2>
-        <div class="picture-of-day__photo photo-block photo-block--of-day">
-          <a class="photo-block__link" href="#">
-            <img class="photo-block__image" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+        <section class="picture-of-day">
+          <h2 class="picture-of-day__title">Панорама дня</h2>
+          <div class="picture-of-day__photo photo-block photo-block--of-day">
+            <a class="photo-block__link" href="#">
+              <img class="photo-block__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+            </a>
+            <p class="photo-block__name-n-date">
+              <a class="photo-block__name" href="#"><b>Анна</b></a>
+              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 минут назад)</time>
+            </p>
+            <p class="photo-block__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button">
+                <span class="visually-hidden">Мне нравится!</span>
+              </button>
+              <p class="photo-block__like-text">Нравится: 215</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-photo">
+          <h2 class="visually-hidden">Последние опубликованные фотографии</h2>
+          <ul class="user-photo__list">
+            <li class="user-photo__item photo-block">
+              <a class="photo-block__link" href="#">
+                <img class="photo-block__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Левон</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 часов назад)</time>
+              </p>
+              <p class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <p class="photo-block__like-text">Нравится: 356</p>
+              </div>
+            </li>
+
+            <li class="user-photo__item photo-block">
+              <a class="photo-block__link" href="#">
+                <img class="photo-block__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Антон</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(12 часов назад)</time>
+              </p>
+              <p class="photo-block__comment">Соседи будут рады!</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button><p class="photo-block__like-text">Нравится: 215</p>
+              </div>
+            </li>
+
+            <li class="user-photo__item photo-block">
+              <a class="photo-block__link" href="#">
+                <img class="photo-block__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Борис</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(20 часов назад)</time>
+              </p>
+              <p class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <p class="photo-block__like-text">Нравится: 215</p>
+              </div>
+            </li>
+
+            <li class="user-photo__item photo-block">
+              <a class="photo-block__link" href="#">
+                <img class="photo-block__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Сергей</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(25 часов назад)</time>
+              </p>
+              <p class="photo-block__comment">Самая кубанская в мире!</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <p class="photo-block__like-text">Нравится: 4</p>
+              </div>
+            </li>
+
+            <li class="user-photo__item photo-block">
+              <a class="photo-block__link" href="#">
+                <img class="photo-block__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Максим</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(40 часов назад)</time>
+              </p>
+              <p class="photo-block__comment">Где снег-то?</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <p class="photo-block__like-text">Нравится: 150</p>
+              </div>
+            </li>
+
+            <li class="user-photo__item photo-block">
+              <a class="photo-block__link" href="#">
+                <img class="photo-block__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Надежда</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(45 часов назад)</time>
+              </p>
+              <p class="photo-block__comment">Всем GM и взаимные лайки!</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <p class="photo-block__like-text">Нравится: 2560</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="upload-photo">
+          <h2 class="visually-hidden">Добавьте свое фото</h2>
+          <p class="upload-photo__text text-block">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+          <div class="upload-photo__filter filter">
+            <div class="filter__image-upload-block">
+              <label class="filter__uploader" for="image-upload">
+              <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загружаемое фото">
+              </label>
+              <input class="filter__image-input" type="file" name="image-upload" id="image-upload">
+            </div>
+            <div class="filter__controls">
+              <ul class="filter__options">
+                <li>
+                  <label class="filter__name filter__name--crop">
+                    <span class="visually-hidden">Обрезать изображение</span>
+                    <input class="filter__option-input" type="radio" name="filter" value="filter-crop" checked></li>
+                  </label>
+                <li>
+                  <label class="filter__name filter__name--fill">
+                    <span class="visually-hidden">Заливка</span>
+                    <input class="filter__option-input" type="radio" name="filter" value="filter-fill"></li>
+                  </label>
+                <li>
+                  <label class="filter__name filter__name--contrast">
+                    <span class="visually-hidden">Контраст</span>
+                    <input class="filter__option-input" type="radio" name="filter" value="filter-contrast"></li>
+                  </label>
+              </ul>
+              <div class="filter__range">
+                <div class="filter__scale"></div>
+                <div class="filter__handle"></div>
+              </div>
+            </div>
+            <div class="filter__buttons">
+              <button class="filter__button button" type="button">Запостить</button>
+              <button class="filter__button button" type="button">Отмена</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-minor">
+        <p class="footer-minor__logo-pink">
+          <a class="footer-minor__link" href="index.html">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сервиса Pink">
           </a>
-          <p class="photo-block__name-n-date">
-            <a class="photo-block__name" href="#"><b>Анна</b></a>
-            <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 минут назад)</time>
-          </p>
-          <p class="photo-block__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <div class="hoto-block__like-section">
-            <button class="photo-block__like-button">Мне нравится!</button>
-            <p class="photo-block__like-text">Нравится: 215</p>
-          </div>
+        </p>
+
+        <div class="footer-minor__social-list">
+          <a class="footer-minor__social footer-minor__twitter" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+          <a class="footer-minor__social footer-minor__facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+          <a class="footer-minor__social footer-minor__youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </div>
-      </section>
 
-      <section class="photo-page__user-photos-section">
-        <h2 class="visually-hidden">Последние опубликованные фотографии</h2>
-        <ul class="photo-page__user-photos-list">
-          <li class="photo-page__user-photo photo-block">
-            <a class="photo-block__link" href="#">
-              <img class="photo-block__image" src="http://placehold.it/280X180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Левон</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 часов назад)</time>
-            </p>
-            <p class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="hoto-block__like-section">
-              <button class="photo-block__like-button">Мне нравится!</button>
-              <p class="photo-block__like-text">Нравится: 356</p>
-            </div>
-          </li>
-
-          <li class="photo-page__user-photo photo-block">
-            <a class="photo-block__link" href="#">
-              <img class="photo-block__image" src="http://placehold.it/280X180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Антон</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(12 часов назад)</time>
-            </p>
-            <p class="photo-block__comment">Соседи будут рады!</p>
-            <div class="hoto-block__like-section">
-              <button class="photo-block__like-button">Мне нравится!</button>
-              <p class="photo-block__like-text">Нравится: 215</p>
-            </div>
-          </li>
-
-          <li class="photo-page__user-photo photo-block">
-            <a class="photo-block__link" href="#">
-              <img class="photo-block__image" src="http://placehold.it/280X180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Борис</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(20 часов назад)</time>
-            </p>
-            <p class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="hoto-block__like-section">
-              <button class="photo-block__like-button">Мне нравится!</button>
-              <p class="photo-block__like-text">Нравится: 215</p>
-            </div>
-          </li>
-
-          <li class="photo-page__user-photo photo-block">
-            <a class="photo-block__link" href="#">
-              <img class="photo-block__image" src="http://placehold.it/280X180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Сергей</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(25 часов назад)</time>
-            </p>
-            <p class="photo-block__comment">Самая кубанская в мире!</p>
-            <div class="hoto-block__like-section">
-              <button class="photo-block__like-button">Мне нравится!</button>
-              <p class="photo-block__like-text">Нравится: 4</p>
-            </div>
-          </li>
-
-          <li class="photo-page__user-photo photo-block">
-            <a class="photo-block__link" href="#">
-              <img class="photo-block__image" src="http://placehold.it/280X180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Максим</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(40 часов назад)</time>
-            </p>
-            <p class="photo-block__comment">Где снег-то?</p>
-            <div class="hoto-block__like-section">
-              <button class="photo-block__like-button">Мне нравится!</button>
-              <p class="photo-block__like-text">Нравится: 150</p>
-            </div>
-          </li>
-
-          <li class="photo-page__user-photo photo-block">
-            <a class="photo-block__link" href="#">
-              <img class="photo-block__image" src="http://placehold.it/280X180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Надежда</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(45 часов назад)</time>
-            </p>
-            <p class="photo-block__comment">Всем GM и взаимные лайки!</p>
-            <div class="hoto-block__like-section">
-              <button class="photo-block__like-button">Мне нравится!</button>
-              <p class="photo-block__like-text">Нравится: 2560</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="photo-page__post-photo post-photo">
-        <h2 class="visually-hidden">Добавьте свое фото</h2>
-        <p class="post-photo__text text-block">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-
-        <div class="post-photo__filter filter">
-          <div class="filter__image-upload-block">
-            <label class="filter__uploader" for="image-upload">
-            <img class="photo-block__image" src="http://placehold.it/280X374" width="280" height="374" alt="Загружаемое фото">
-            </label>
-            <input class="filter__image-input" type="file" name="image-upload" id="image-upload">
-          </div>
-          <div class="filter__controls">
-            <ul class="filter__options">
-              <li><input class="filter__option" type="radio" name="filter" value="filter-crop" checked></li>
-              <li><input class="filter__option" type="radio" name="filter" value="filter-color"></li>
-              <li><input class="filter__option" type="radio" name="filter" value="filter-contrast"></li>
-            </ul>
-            <div class="filter__range">
-              <div class="filter__scale"></div>
-              <div class="filter__handle"></div>
-            </div>
-          </div>
-          <div class="filter__buttons">
-            <button class="filter__button button" type="button">Запостить</button>
-            <button class="filter__button button" type="button">Отмена</button>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer-minor">
-      <p class="footer-minor__logo-pink">
-        <a class="footer-minor__link" href="index.html">
-          <img src="http://placehold.it/147x40" width="147" height="40" alt="Логотип сервиса Pink">
-        </a>
-      </p>
-
-      <div class="footer-minor__social-list">
-        <a class="footer-minor__social-vkontakte" href="#">Вконтакте</a>
-        <a class="footer-minor__social-facebook" href="#">Facebook</a>
-        <a class="footer-minor__social-youtube" href="#">Youtube</a>
-      </div>
-
-      <p class="footer-minor__copyright">
-        <b>Разработано</b>
-        <a class="footer-minor__academy-link" href="https://htmlacademy.ru">
-          <img class="footer-minor__academy-logo"
-          src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
-        </a>
-      </p>
-    </footer>
+        <p class="footer-minor__copyright">
+          <b class="footer-minor__built">Разработано</b>
+          <a class="footer-minor__academy-link" href="https://htmlacademy.ru">
+            <img class="footer-minor__academy-logo"
+            src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

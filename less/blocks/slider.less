@@ -1,0 +1,37 @@
+.slider {
+  width: 100%;
+}
+
+.slider__inner {
+  display: flex;
+  flex-flow: row warp;
+  /*overflow: hidden;*/
+}
+
+.slider__item {
+  .out();
+  flex: 0 0 auto;
+}
+
+.slider__controls {
+  width: 56px;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #bec2c7;
+
+  cursor: pointer;
+}
+
+.slider__button--active {
+  background: transparent;
+  border: 3px solid @basic-dark-color;
+}

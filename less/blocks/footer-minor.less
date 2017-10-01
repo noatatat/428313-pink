@@ -57,3 +57,32 @@
 .footer-minor__academy-logo {
   display: block;
 }
+
+@media (min-width: @tablet-width) {
+  .footer-minor {
+    .out();
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 127px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .footer-minor__logo-pink,
+  .footer-minor__social-list,
+  .footer-minor__copyright {
+    .out();
+    .local-reset();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-minor {
+    height: 197px;
+    padding: 0 130px;
+  }
+
+}

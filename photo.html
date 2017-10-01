@@ -22,7 +22,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-nav">
+        <nav class="page-header__menu main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -41,8 +41,8 @@
       </header>
 
       <main class="photo-page">
-        <h1 class="photo-page__title">Фотографии пользователей</h1>
-        <p class="photo-page__text text-block">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        <h1 class="photo-page__title">Фотографии<br>пользователей</h1>
+        <p class="photo-page__text text-block">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
         <section class="picture-of-day">
           <h2 class="picture-of-day__title">Панорама дня</h2>
@@ -50,16 +50,18 @@
             <a class="photo-block__link" href="#">
               <img class="photo-block__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
             </a>
-            <p class="photo-block__name-n-date">
-              <a class="photo-block__name" href="#"><b>Анна</b></a>
-              <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 минут назад)</time>
-            </p>
-            <p class="photo-block__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button">
-                <span class="visually-hidden">Мне нравится!</span>
-              </button>
-              <p class="photo-block__like-text">Нравится: 215</p>
+            <div class="photo-block__info-block">
+              <p class="photo-block__name-n-date">
+                <a class="photo-block__name" href="#"><b>Анна</b></a>
+                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 минут назад)</time>
+              </p>
+              <p class="photo-block__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photo-block__like-section">
+                <button class="photo-block__like-button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <p class="photo-block__like-text">Нравится: 215</p>
+              </div>
             </div>
           </div>
         </section>
@@ -71,16 +73,18 @@
               <a class="photo-block__link" href="#">
                 <img class="photo-block__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
               </a>
-              <p class="photo-block__name-n-date">
-                <a class="photo-block__name" href="#"><b>Левон</b></a>
-                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 часов назад)</time>
-              </p>
-              <p class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="photo-block__like-section">
-                <button class="photo-block__like-button">
-                  <span class="visually-hidden">Мне нравится!</span>
-                </button>
-                <p class="photo-block__like-text">Нравится: 356</p>
+              <div class="photo-block__info-block">
+                <p class="photo-block__name-n-date">
+                  <a class="photo-block__name" href="#"><b>Левон</b></a>
+                  <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(5 часов назад)</time>
+                </p>
+                <p class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button">
+                    <span class="visually-hidden">Мне нравится!</span>
+                  </button>
+                  <p class="photo-block__like-text">Нравится: 356</p>
+                </div>
               </div>
             </li>
 
@@ -88,15 +92,17 @@
               <a class="photo-block__link" href="#">
                 <img class="photo-block__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
               </a>
-              <p class="photo-block__name-n-date">
-                <a class="photo-block__name" href="#"><b>Антон</b></a>
-                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(12 часов назад)</time>
-              </p>
-              <p class="photo-block__comment">Соседи будут рады!</p>
-              <div class="photo-block__like-section">
-                <button class="photo-block__like-button">
-                  <span class="visually-hidden">Мне нравится!</span>
-                </button><p class="photo-block__like-text">Нравится: 215</p>
+              <div class="photo-block__info-block">
+                <p class="photo-block__name-n-date">
+                  <a class="photo-block__name" href="#"><b>Антон</b></a>
+                  <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(12 часов назад)</time>
+                </p>
+                <p class="photo-block__comment">Соседи будут рады!</p>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button">
+                    <span class="visually-hidden">Мне нравится!</span>
+                  </button><p class="photo-block__like-text">Нравится: 215</p>
+                </div>
               </div>
             </li>
 
@@ -104,16 +110,18 @@
               <a class="photo-block__link" href="#">
                 <img class="photo-block__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
               </a>
-              <p class="photo-block__name-n-date">
-                <a class="photo-block__name" href="#"><b>Борис</b></a>
-                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(20 часов назад)</time>
-              </p>
-              <p class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="photo-block__like-section">
-                <button class="photo-block__like-button">
-                  <span class="visually-hidden">Мне нравится!</span>
-                </button>
-                <p class="photo-block__like-text">Нравится: 215</p>
+              <div class="photo-block__info-block">
+                <p class="photo-block__name-n-date">
+                  <a class="photo-block__name" href="#"><b>Борис</b></a>
+                  <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(20 часов назад)</time>
+                </p>
+                <p class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button">
+                    <span class="visually-hidden">Мне нравится!</span>
+                  </button>
+                  <p class="photo-block__like-text">Нравится: 215</p>
+                </div>
               </div>
             </li>
 
@@ -121,16 +129,18 @@
               <a class="photo-block__link" href="#">
                 <img class="photo-block__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
               </a>
-              <p class="photo-block__name-n-date">
-                <a class="photo-block__name" href="#"><b>Сергей</b></a>
-                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(25 часов назад)</time>
-              </p>
-              <p class="photo-block__comment">Самая кубанская в мире!</p>
-              <div class="photo-block__like-section">
-                <button class="photo-block__like-button">
-                  <span class="visually-hidden">Мне нравится!</span>
-                </button>
-                <p class="photo-block__like-text">Нравится: 4</p>
+              <div class="photo-block__info-block">
+                <p class="photo-block__name-n-date">
+                  <a class="photo-block__name" href="#"><b>Сергей</b></a>
+                  <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(25 часов назад)</time>
+                </p>
+                <p class="photo-block__comment">Самая кубанская в мире!</p>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button">
+                    <span class="visually-hidden">Мне нравится!</span>
+                  </button>
+                  <p class="photo-block__like-text">Нравится: 4</p>
+                </div>
               </div>
             </li>
 
@@ -138,16 +148,18 @@
               <a class="photo-block__link" href="#">
                 <img class="photo-block__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
               </a>
-              <p class="photo-block__name-n-date">
-                <a class="photo-block__name" href="#"><b>Максим</b></a>
-                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(40 часов назад)</time>
-              </p>
-              <p class="photo-block__comment">Где снег-то?</p>
-              <div class="photo-block__like-section">
-                <button class="photo-block__like-button">
-                  <span class="visually-hidden">Мне нравится!</span>
-                </button>
-                <p class="photo-block__like-text">Нравится: 150</p>
+              <div class="photo-block__info-block">
+                <p class="photo-block__name-n-date">
+                  <a class="photo-block__name" href="#"><b>Максим</b></a>
+                  <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(40 часов назад)</time>
+                </p>
+                <p class="photo-block__comment">Где снег-то?</p>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button">
+                    <span class="visually-hidden">Мне нравится!</span>
+                  </button>
+                  <p class="photo-block__like-text">Нравится: 150</p>
+                </div>
               </div>
             </li>
 
@@ -155,16 +167,18 @@
               <a class="photo-block__link" href="#">
                 <img class="photo-block__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
               </a>
-              <p class="photo-block__name-n-date">
-                <a class="photo-block__name" href="#"><b>Надежда</b></a>
-                <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(45 часов назад)</time>
-              </p>
-              <p class="photo-block__comment">Всем GM и взаимные лайки!</p>
-              <div class="photo-block__like-section">
-                <button class="photo-block__like-button">
-                  <span class="visually-hidden">Мне нравится!</span>
-                </button>
-                <p class="photo-block__like-text">Нравится: 2560</p>
+              <div class="photo-block__info-block">
+                <p class="photo-block__name-n-date">
+                  <a class="photo-block__name" href="#"><b>Надежда</b></a>
+                  <time class="photo-block__date" datetime="2017-07-24T18:18:18+04:00">(45 часов назад)</time>
+                </p>
+                <p class="photo-block__comment">Всем GM и взаимные лайки!</p>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button">
+                    <span class="visually-hidden">Мне нравится!</span>
+                  </button>
+                  <p class="photo-block__like-text">Нравится: 2560</p>
+                </div>
               </div>
             </li>
           </ul>

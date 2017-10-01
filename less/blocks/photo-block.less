@@ -3,9 +3,13 @@
   margin-bottom: 20px;
 }
 
-.photo-block__image {
+.photo-block__link {
   display: block;
   margin: 0 20px;
+}
+
+.photo-block__image {
+  display: block;
 }
 
 .photo-block__info-block {
@@ -76,6 +80,121 @@
   cursor: pointer;
 }
 
-.photo-block--of-day .photo-block__image {
+.photo-block__link--of-day {
   margin: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .photo-block__link {
+    margin: 0;
+  }
+
+  .photo-block__image {
+    .local-reset();
+    width: 300px;
+    height: 300px;
+
+    background-color: @border-color;
+  }
+
+  .photo-block__info-block {
+    display: flex;
+    flex-flow: column nowrap;
+
+    min-height: 155px;
+    box-sizing: border-box;
+    padding: 27px;
+    margin: 0;
+  }
+
+  .photo-block__name-n-date {
+    padding-bottom: 0;
+  }
+
+  .photo-block__comment {
+    padding-bottom: 4px;
+
+    font-size: 14px;
+  }
+
+  .photo-block__like-section {
+    margin-top: auto;
+  }
+
+  .photo-block__like-section {
+    justify-content: space-between;
+  }
+
+  .photo-block__like-text {
+    order: 1;
+  }
+
+  .photo-block__like-button {
+    order: 2;
+
+    margin-right: 0;
+  }
+
+  .photo-block__image--of-day {
+    width: 100%;
+    height: 509px;
+  }
+
+  .photo-block__info-block--of-day {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 121px;
+    box-sizing: border-box;
+    padding: 21px;
+    margin: 0 20px;
+  }
+
+  .photo-block__name-n-date--of-day {
+    .out();
+    .local-reset();
+    order: 1;
+    }
+
+  .photo-block__like-section--of-day {
+    .out();
+    .local-reset();
+    order: 2;
+  }
+
+  .photo-block__comment--of-day {
+    .out();
+    .local-reset();
+    order: 3;
+  }
+
+  .photo-block__like-text--of-day {
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-block__image {
+    height: 400px;
+  }
+
+  .photo-block__image--of-day {
+    width: 100%;
+    height: 506px;
+  }
+
+  .photo-block__info-block--of-day {
+/*    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 121px;
+    box-sizing: border-box;*/
+    padding: 28px;
+    margin: 0 130px;
+  }
 }

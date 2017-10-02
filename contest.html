@@ -64,7 +64,7 @@
             </fieldset>
 
             <fieldset class="form__achievements">
-              <legend class="form__legend">Ваши безбашенные<br>достижения в путешествии</legend>
+              <legend class="form__legend">Ваши безбашенные достижени&nbsp;в&nbsp;путешествии</legend>
               <ul class="form__list-checkbox">
                 <li class="form__item-checkbox">
                   <input class="form__input-checkbox" type="checkbox"
@@ -112,14 +112,16 @@
             </fieldset>
 
             <fieldset class="form__contacts">
-              <legend class="visually-hidden">Контакты</legend>
-              <div class="form__field-block">
-                <label class="form__label" for="phone">Номер телефона </label>
-                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form__field-block">
-                <label class="form__label" for="email">Адрес почты </label>
-                <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
+              <legend class="form__legend">Контактная информация</legend>
+              <div class="form__contacts-block">
+                <div class="form__field-block">
+                  <label class="form__label" for="phone">Номер телефона </label>
+                  <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__field-block">
+                  <label class="form__label" for="email">Адрес почты </label>
+                  <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
+                </div>
               </div>
             </fieldset>
 
@@ -150,16 +152,18 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__emotion">
+            <fieldset class="form__emotions">
               <legend class="form__legend">Опишите свои эмоции</legend>
               <textarea class="form__emotional-text" name="emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
 
-            <input type="submit" class="form__submit-button form-button" value="Отправить форму">
+            <div class="form-footer">
+              <input type="submit" class="form__submit-button form-button" value="Отправить форму">
+              <p class="form__footnote-text">
+                <span class="form__footnote">*</span> — обязательные поля
+              </p>
+            </div>
           </form>
-          <p class="form__footnote-text">
-            <span class="form__footnote">*</span> — обязательные поля
-          </p>
         </section>
       </main>
 

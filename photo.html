@@ -186,7 +186,7 @@
 
         <section class="upload-photo">
           <h2 class="visually-hidden">Добавьте свое фото</h2>
-          <p class="upload-photo__text text-block">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="upload-photo__text text-block">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
           <div class="upload-photo__filter filter">
             <div class="filter__image-upload-block">
@@ -195,32 +195,34 @@
               </label>
               <input class="filter__image-input" type="file" name="image-upload" id="image-upload">
             </div>
-            <div class="filter__controls">
-              <ul class="filter__options">
-                <li>
-                  <label class="filter__name filter__name--crop">
-                    <span class="visually-hidden">Обрезать изображение</span>
-                    <input class="filter__option-input" type="radio" name="filter" value="filter-crop" checked></li>
-                  </label>
-                <li>
-                  <label class="filter__name filter__name--fill">
-                    <span class="visually-hidden">Заливка</span>
-                    <input class="filter__option-input" type="radio" name="filter" value="filter-fill"></li>
-                  </label>
-                <li>
-                  <label class="filter__name filter__name--contrast">
-                    <span class="visually-hidden">Контраст</span>
-                    <input class="filter__option-input" type="radio" name="filter" value="filter-contrast"></li>
-                  </label>
-              </ul>
-              <div class="filter__range">
-                <div class="filter__scale"></div>
-                <div class="filter__handle"></div>
+            <div class="filter__control-panel">
+              <div class="filter__controls">
+                <ul class="filter__options">
+                  <li>
+                    <label class="filter__name filter__name--crop">
+                      <span class="visually-hidden">Обрезать изображение</span>
+                      <input class="filter__option-input" type="radio" name="filter" value="filter-crop" checked></li>
+                    </label>
+                  <li>
+                    <label class="filter__name filter__name--fill">
+                      <span class="visually-hidden">Заливка</span>
+                      <input class="filter__option-input" type="radio" name="filter" value="filter-fill"></li>
+                    </label>
+                  <li>
+                    <label class="filter__name filter__name--contrast">
+                      <span class="visually-hidden">Контраст</span>
+                      <input class="filter__option-input" type="radio" name="filter" value="filter-contrast"></li>
+                    </label>
+                </ul>
+                <div class="filter__range">
+                  <div class="filter__scale"></div>
+                  <div class="filter__handle"></div>
+                </div>
               </div>
-            </div>
-            <div class="filter__buttons">
-              <button class="filter__button button" type="button">Запостить</button>
-              <button class="filter__button button" type="button">Отмена</button>
+              <div class="filter__buttons">
+                <button class="filter__button button" type="button">Запостить</button>
+                <button class="filter__button button" type="button">Отмена</button>
+              </div>
             </div>
           </div>
         </section>

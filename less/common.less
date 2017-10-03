@@ -38,6 +38,7 @@ img {
 }
 
 @media (min-width: @tablet-width) {
+  /*******************************************************/
   .temporary_block1 {
     height: 50px;
     &-abs {
@@ -45,7 +46,7 @@ img {
       height: 69px;
     }
   }
-
+  /*******************************************************/
   .wrapper {
     width: @tablet-width;
     margin: 0 auto;
@@ -54,8 +55,15 @@ img {
 
 @media (min-width: @desktop-width) {
   /*******************************************************/
-  [class^="temp"] {
-    display: none;
+  .temporary_block1 {
+    height: 96px;
+    &-abs {
+      width: 1200px;
+      height: 103px;
+    }
+    &-2 {
+      height: 82px;
+    }
   }
   /*******************************************************/
 

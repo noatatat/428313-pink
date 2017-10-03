@@ -122,8 +122,8 @@
 
 @media (min-width: @tablet-width) {
   .tariff {
-    padding-top: 37px;
-    padding-bottom: 28px;
+    padding-top: 35px;
+    padding-bottom: 68px;
   }
 
   .tariff__window {
@@ -133,6 +133,8 @@
   .tariff__list {
     overflow: visible;
     justify-content: center;
+
+    padding-bottom: 0;
   }
 
   .tariff__item {
@@ -198,10 +200,39 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
-    padding: 95px 0;
+    padding-top: 65px;
+    padding-bottom: 95px;
+  }
+
+  .tariff__list {
+    padding-bottom: 0;
   }
 
   .tariff__item {
-    width: 233px;
+    width: 235px;
+  }
+
+  .tariff__rate {
+    height: 98px;
+  }
+
+  .tariff__name {
+    font-size: 18px;
+  }
+
+  .tariff__price {
+    font-size: 24px;
+  }
+
+  .tariff__feature {
+    height: 60px;
+  }
+
+  .tariff__feature-text {
+    font-size: 18px;
+  }
+
+  .tariff__name-table .tariff__feature {
+    padding: 0 24px;
   }
 }

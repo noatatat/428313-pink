@@ -63,7 +63,10 @@
   .local-reset();
   display: block;
   width: 100%;
+  box-sizing: border-box;
   padding: 40px 20px;
+  font-weight: normal;
+  font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: @pink-color;
@@ -232,11 +235,21 @@
     margin-bottom: 50px;
   }
 
+  .contest-page__section fieldset {
+    position: relative;
+  }
+
   .form__legend {
     .local-reset();
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: auto;
+    max-width: none;
     padding: 0 25px;
     background-color: white;
+    white-space: nowrap; /*  --------------------------исправить! */
   }
 
   .form__list-checkbox,

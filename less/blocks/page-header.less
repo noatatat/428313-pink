@@ -1,47 +1,91 @@
-.page-header {
-  background-color: @basic-dark-color;
+.page-header__top,
+.page-header__menu {
+  background-color: @basic-color;
 }
 
 .page-header__top {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
   box-sizing: border-box;
-  min-height: 70px;
+  min-height: 69px;
   padding: 22px 20px;
   border-bottom: 1px solid #000000;
 }
 
+.page-header__logo,
+.page-header__logo-image {
+  display: block;
+}
+
 .page-header__toggle {
-  width: 24px;
+  .out();
+  .local-reset();
+  width: 23px;
   height: 23px;
-  background-color: @basic-dark-color;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  border: 0;
+
+  background-color: transparent;
+  border: none;
+
   cursor: pointer;
 }
 
 .page-header__logo-image{
   fill: #ffffff;
-  /*width: 75px;
-  height: 22px;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;*/
 }
 
 .page-header__logo[href] {
   &:hover .page-header__logo-image,
   &:focus .page-header__logo-image {
     fill: @pink-color;
-    /*background-image: url("../img/logo-pink-white-mobile-pink.svg");*/
   }
 
   &:active .page-header__logo-image {
     fill: rgba(255, 255, 255, 0.3);
-    /*background-image: url("../img/logo-pink-white-mobile-transparent.svg");*/
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header__top {
+    min-height: 109px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .out();
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    box-sizing: border-box;
+    min-height: 110px;
+    width: @desktop-width;
+
+    padding: 22px 130px;
+    background-color: @transparent;
+  }
+
+  .page-header__top {
+    .out();
+    .local-reset;
+    display: block;
+    min-height: 0;
+    border-bottom: none;
+    background-color: transparent;
+  }
+
+  .page-header__menu {
+    .out();
+    background-color: transparent;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }

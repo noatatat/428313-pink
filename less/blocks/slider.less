@@ -5,7 +5,7 @@
 .slider__inner {
   display: flex;
   flex-flow: row warp;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .slider__item {
@@ -16,7 +16,6 @@
 .slider__controls {
   width: 56px;
   margin: 0 auto;
-  margin-top: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,5 +32,15 @@
 
 .slider__button--active {
   background: transparent;
-  border: 3px solid @basic-dark-color;
+  border: 3px solid @basic-color;
+}
+
+
+@media (min-width: @tablet-width) {
+}
+
+@media (min-width: @desktop-width) {
+  .slider__controls {
+    display: none;
+  }
 }

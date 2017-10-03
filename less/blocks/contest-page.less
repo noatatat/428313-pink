@@ -1,7 +1,9 @@
 .contest-page__title {
   .local-reset();
   background: url("../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
-  padding: 90px 20px;
+  padding: 90px 50px;
+  min-height: 238px;
+  box-sizing: border-box;
 
   color: white;
   font-size: 24px;
@@ -17,4 +19,44 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+}
+
+.contest-page__text-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-page__title {
+    padding: 160px 50px 90px 50px;
+    min-height: 440px;
+
+    font-size: 50px;
+  }
+
+  .contest-page__text {
+    padding: 94px 85px;
+
+    font-size: 18px;
+  }
+
+  .contest-page__text-tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-page__title {
+    padding: 181px 80px 90px 80px;
+    min-height: 394px;
+
+    font-size: 50px;
+    background-color: @basic-color;
+  }
+
+  .contest-page__text {
+    padding: 94px 230px;
+
+    font-size: 18px;
+  }
+
 }

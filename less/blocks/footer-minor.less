@@ -23,7 +23,7 @@
   display: block;
   width: 45px;
   height: 45px;
-  border: 3px solid @background-lite;
+  border: 3px solid @bg-lite;
   border-radius: 50%;
 }
 
@@ -56,4 +56,33 @@
 
 .footer-minor__academy-logo {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-minor {
+    .out();
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 127px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .footer-minor__logo-pink,
+  .footer-minor__social-list,
+  .footer-minor__copyright {
+    .out();
+    .local-reset();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-minor {
+    height: 197px;
+    padding: 0 130px;
+  }
+
 }

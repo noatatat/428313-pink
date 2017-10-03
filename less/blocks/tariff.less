@@ -1,8 +1,15 @@
 .tariff {
-  background-color: @background-lite;
-  padding-top: 35px;
+  background-color: @bg-lite;
+  padding: 35px 0;
   text-transform: uppercase;
-  padding-bottom: 35px;
+}
+
+.tariff__name-table {
+  display: none;
+}
+
+.tariff__list {
+  /*padding-bottom: 35px;*/
 }
 
 .tariff__item {
@@ -12,11 +19,17 @@
 }
 
 .tariff__rate {
-  background-color: @basic-dark-color;
+  height: 98px;
+  box-sizing: border-box;
   padding: 10px;
-
+  background-color: @basic-color;
   border-left: 1px solid @border-color;
   border-right: 1px solid @border-color;
+}
+
+.tariff__link {
+  display: block;
+  /*  ------------разобраться!*/
 }
 
 .tariff__name,
@@ -39,14 +52,14 @@
 }
 
 .tariff__feature {
-
   position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 
-  padding: 24px;
+  height: 59px;
+  padding: 0 24px;
   background-color: white;
   border-left: 1px solid @border-color;
   border-right: 1px solid @border-color;
@@ -103,5 +116,90 @@
     background-repeat: no-repeat;
 
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tariff {
+    padding: 69px 0;
+  }
+
+  .tariff__window {
+    margin-right: 20px;
+  }
+
+  .tariff__list {
+    overflow: visible;
+    justify-content: center;
+  }
+
+  .tariff__item {
+    width: 155px;
+    transform: translateX(0);
+  }
+
+  .tariff__rate {
+    height: 94px;
+  }
+
+  .tariff__name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .tariff__price {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariff__feature {
+    justify-content: center;
+
+    height: 45px;
+  }
+
+  .tariff__feature::after {
+    margin-left: 0;
+  }
+
+  .tariff__feature-text {
+    display: none;
+  }
+
+  .tariff__name-table {
+    display: table;
+  }
+
+  .tariff__name-table .tariff__rate {
+    background-color: transparent;
+  }
+
+  .tariff__name-table .tariff__feature {
+    justify-content: flex-start;
+
+    padding: 0 14px;
+  }
+
+  .tariff__name-table .tariff__feature::after {
+    display: none;
+  }
+
+  .tariff__name-table  .tariff__feature-text {
+    display: block;
+    text-transform: none;
+  }
+
+  .tariff__controls {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff {
+    padding: 95px 0;
+  }
+
+  .tariff__item {
+    width: 233px;
   }
 }

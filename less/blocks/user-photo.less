@@ -1,3 +1,49 @@
 .user-photo__list {
   .list-reset();
 }
+
+@media (min-width: @tablet-width) {
+  .user-photo {
+    padding: 0 20px;
+  }
+
+  .user-photo__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .user-photo__item {
+    width: 300px;
+    /*min-height: 455px;*/
+    margin-bottom: 20px;
+  }
+
+  .user-photo__item:nth-child(2n+1) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photo {
+    padding: 0 130px;
+  }
+/*
+  .user-photo__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .user-photo__item {
+    width: 300px;
+  /*  min-height: 455px;*/
+  /*  margin-bottom: 20px;
+  }*/
+
+  .user-photo__item {
+    margin-right: 20px;
+  }
+
+  .user-photo__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}

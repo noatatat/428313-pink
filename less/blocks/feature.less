@@ -1,6 +1,6 @@
 .feature__intro-container {
   background-color: white;
-  padding: 32px 20px 0 20px;
+  padding: 32px 20px;
 }
 
 .feature__intro-text {
@@ -10,31 +10,145 @@
   padding-bottom: 36px;
 }
 
-.feature__list {
-  .list-reset();
-  padding: 36px 20px 0 20px;
-  background-color: @background-lite;
+.feature__intro-text:last-child {
+  padding-bottom: 0;
 }
 
-.feature {
-  color: black;
+.feature__list {
+  .list-reset();
+  padding: 36px 20px 41px 20px;
+  background-color: @bg-lite;
+}
+
+.feature__item:not(:last-child) {
+  padding-bottom: 41px;
 }
 
 .feature__title {
   .local-reset();
+  padding-bottom: 16px;
+
+  color: black;
   font-size: 18px;
   font-weight: bold;
-  padding-bottom: 16px;
 }
 
 .feature__text {
   .local-reset();
-  padding-bottom: 41px;
-  color: @basic-dark-color;
+  color: @basic-color;
 }
 
-.feature__image {
-  width: 100%;
-  height: 277px;
-  background: @background-lite url("../img/iphone-screen-mobile@1x.png") 50% 0% no-repeat;
+.feature__image-block {
+  background-color: @bg-lite;
+  line-height: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .feature__intro-container {
+    background-color: white;
+    padding: 48px 20px;
+  }
+
+  .feature__intro-text {
+    font-size: 40px;
+  }
+
+  .feature__intro-text:not(:last-child) {
+    padding-bottom: 0;
+  }
+
+  .feature__list {
+    .out();
+    padding-left: 330px;
+  }
+
+  .feature__title {
+    text-align: left;
+  }
+
+  .feature__text {
+    text-align: left;
+  }
+
+  .feature__image-block {
+    .local-reset();
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 268px;
+    height: 547px;
+
+    background-color: @pink-color;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .feature__intro-container {
+    background-color: white;
+    padding: 76px 20px 176px 20px;
+  }
+
+  .feature__intro-text {
+    font-size: 50px;
+  }
+
+  .feature__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    width: 940px;
+    padding: 265px 130px 70px 130px;
+    /*margin: 0 auto;*/
+  }
+
+  .feature__item {
+    .out();
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+
+  .feature__item:not(:last-child) {
+    padding-bottom: 0;
+  }
+
+  .feature__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -320px;
+    left: 0;
+
+    width: 300px;
+    height: 300px;
+
+    background-color: @pink-color;
+  }
+
+
+  .feature__title {
+    padding-bottom: 32px;
+
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .feature__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  .feature__image-block {
+    display: none;
+  }
 }

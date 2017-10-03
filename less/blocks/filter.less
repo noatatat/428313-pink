@@ -1,14 +1,15 @@
 .filter {
-  background-color: @background-lite;
-  padding-top: 20px;
+  .out();
+  background-color: @bg-lite;
+  padding: 20px 20px;
 }
 
 .filter__image-upload-block {
   width: 280px;
   height: 374px;
   margin-bottom: 42px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
 }
 
 .filter__image-input,
@@ -18,6 +19,7 @@
 
 .filter__uploader {
   .local-reset();
+  display: block;
   cursor: pointer;
 }
 
@@ -43,15 +45,15 @@
 }
 
 .filter__name--crop {
-  background: url("../img/icon-editor-crop.svg") 50% 50% no-repeat;
+  background: url("../img/icon-editor-crop.svg") 0 50% no-repeat;
 }
 
 .filter__name--fill {
-  background: url("../img/icon-editor-fill.svg") 50% 0% no-repeat;
+  background: url("../img/icon-editor-fill.svg") 0 50% no-repeat;
 }
 
 .filter__name--contrast {
-  background: url("../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+  background: url("../img/icon-editor-contrast.svg") 0 50% no-repeat;
 }
 
 .filter__range {
@@ -89,4 +91,112 @@
 
 .filter__button {
   margin: 12px auto;
+}
+
+@media (min-width: @tablet-width) {
+  .filter {
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding: 58px 20px;
+  }
+
+  .filter__image-upload-block {
+    .local-reset();
+    width: 300px;
+    height: 400px;
+    margin-right: 45px;
+  }
+
+  /*---------------------------*/
+  .filter__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .filter__control-panel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    width: 275px;
+    box-sizing: border-box;
+  }
+
+  .filter__options {
+    .local-reset();
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .filter__options li {
+    .out;
+    height: 71px;
+    box-sizing: border-box;
+    padding: 14px 0;
+    text-align: left;
+  /*  vertical-align: middle;*/
+    border-bottom: 1px solid @border-color;
+  }
+
+  .filter__name {
+    background-size: 50%;
+    display: inline-block;
+  }
+
+  .filter__range {
+    display: none;
+  }
+
+  .filter__buttons {
+    border-top: 0;
+    padding-bottom: 0;
+  }
+
+  .filter__button {
+    width: 275px;
+  }
+
+  .filter__button:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter {
+    margin: 0 130px;
+    padding: 58px 80px 58px 60px;
+  }
+
+  .filter__image-upload-block {
+    margin-right: 93px;
+  }
+
+  .filter__control-panel {
+    width: 410px;
+    box-sizing: border-box;
+  }
+
+  .filter__name {
+    background-size: initial;
+  }
+
+  .filter__buttons {
+    .local-reset();
+    border-top: 0;
+  }
+
+  .filter__button {
+    display: inline-block;
+    width: 185px;
+    margin: 0;
+  }
+
+  .filter__button:not(:last-child) {
+    margin-right: 30px;
+  }
 }

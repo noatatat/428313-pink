@@ -33,32 +33,35 @@ img {
 }
 
 .wrapper {
-  width: 100%;
+  width: @mobile-wrap;
   margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
+  .wrapper {
+    width: @tablet-wrap;
+  }
+
   /*******************************************************/
   .temporary_block1 {
     height: 50px;
     &-abs {
-      width: 660px;
+      width: 100vw;
       height: 69px;
     }
   }
   /*******************************************************/
-  .wrapper {
-    width: @tablet-width;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .wrapper {
+    width: @desktop-wrap;
+  }
+
   /*******************************************************/
   .temporary_block1 {
     height: 96px;
     &-abs {
-      width: 1200px;
       height: 103px;
     }
     &-2 {
@@ -67,14 +70,10 @@ img {
   }
   /*******************************************************/
 
-  .wrapper {
-    width: @desktop-width;
-    margin: 0 auto;
-  }
 }
 
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;

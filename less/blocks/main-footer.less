@@ -1,6 +1,5 @@
 .main-footer__block {
-  padding: 45px 20px 40px 20px;
-
+  padding: 45px 0 40px 0;
   background-color: white;
 }
 
@@ -13,12 +12,14 @@
 
   .main-footer__map img {
     display: block;
+    width: 100%;
     height: 200px;
   }
 
 @media (min-width: @tablet-width) {
   .main-footer__block {
     padding: 0;
+    padding-bottom: 25px;
   }
 
   .main-footer__text {
@@ -40,6 +41,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-footer__block {
+    padding: 0;
+  }
+
   .main-footer__text {
     padding-top: 60px;
     padding-bottom: 60px;

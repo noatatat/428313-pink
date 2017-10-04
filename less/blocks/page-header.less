@@ -1,9 +1,13 @@
-.page-header__top,
-.page-header__menu {
+.page-header {
+  width: 100%;
   background-color: @basic-color;
 }
 
-.page-header__top {
+.page-header__main-wrapper {
+  width: auto;
+}
+
+.page-header__wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -11,7 +15,10 @@
 
   box-sizing: border-box;
   min-height: 70px;
-  padding: 22px 20px 24px 20px;
+  padding: 22px 0  24px 0;
+}
+
+.page-header__top {
   border-bottom: 1px solid #000000;
 }
 
@@ -49,27 +56,37 @@
 
 
 @media (min-width: @tablet-width) {
-  .page-header__top {
+  .page-header__wrapper {
     min-height: 109px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    .out();
+    position: absolute;
+    min-height: 110px;
+    background-color: @transparent;
+  }
+
+  .page-header__main-wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    position: absolute;
     box-sizing: border-box;
     min-height: 110px;
-    width: @desktop-width;
-
-    padding: 22px 130px;
-    background-color: @transparent;
+    width: @desktop-wrap;
+    margin: 0 auto;
+    padding: 22px 0;
   }
+
+  .page-header__wrapper {
+    .local-reset();
+    width: auto;
+    min-height: 0;
+  }
+
 
   .page-header__top {
     .out();

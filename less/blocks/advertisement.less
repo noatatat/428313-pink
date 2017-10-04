@@ -4,16 +4,21 @@
 
 @media (min-width: @tablet-width) {
   .advertisement {
-    position: relative;
     display: block;
-    padding: 95px 40px 100px 330px;
+    padding: 95px 0 100px 0;
     background-color: white;
+  }
+
+  .advertisement__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px 0 310px;
   }
 
   .advertisement__picture {
     position: absolute;
-    top: 60px;
-    left: 20px;
+    top: -35px;
+    left: 0;
     width: 238px;
     height: 276px;
     background-color: @pink-color;
@@ -48,13 +53,19 @@
 
 @media (min-width: @desktop-width) {
   .advertisement {
-    padding: 90px 130px 115px 495px;
+    padding: 90px 0 115px 0;
     background-color: @bg-lite;
   }
 
+  .advertisement__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 0 0 365px;
+  }
+
   .advertisement__picture {
-    top: 0;
-    left: 130px;
+    top: -90px;
+    left: 0;
     width: 298px;
     height: 345px;
     background-color: @pink-color;

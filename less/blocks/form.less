@@ -1,8 +1,20 @@
+.form__color-block {
+  &--white {
+    background-color: white;
+  }
+  &--grey {
+    background-color: @bg-lite;
+  }
+}
+
+.form__main-wrapper {
+  width: auto;
+  margin: 0;
+}
+
 .form__personal {
   .local-reset();
   border: 0;
-  background-color: white;
-  padding: 0 20px;
   padding-bottom: 42px;
 }
 
@@ -56,7 +68,6 @@
 .form__application {
   .local-reset();
   border: 0;
-  background-color: @bg-lite;
 }
 
 .form__legend {
@@ -64,13 +75,12 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 40px 20px;
+  padding: 40px 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: @pink-color;
-  background-color: @bg-lite;
 }
 
 .form__emotions .form__legend {
@@ -81,7 +91,6 @@
 .form__list-radio-button {
   .list-reset();
   text-align: left;
-  padding: 0 20px;
   padding-bottom: 40px;
 }
 
@@ -136,8 +145,7 @@
 .form__contacts {
   .local-reset();
   border: 0;
-  background-color: white;
-  padding: 36px 20px;
+  padding: 36px 0;
 }
 
 .form__contacts .form__legend {
@@ -157,8 +165,6 @@
 .form__emotions {
   .local-reset();
   border: 0;
-  background-color: white;
-  padding: 0 20px;
   margin-bottom: 48px;
 }
 
@@ -179,33 +185,54 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 20px;
+  .form__color-block {
+    &--white {
+      background-color: white;
+    }
+    &--grey {
+      background-color: white;
+    }
   }
 
-  .form__personal {
+  .form__main-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: @tablet-wrap;
+    margin: 0 auto;
+  }
+
+  .form__wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  /*.form {
+    display: flex;
+    flex-flow: column nowrap;
+  }*/
+
+  .form__personal-container {
     order: 1;
   }
 
-  .form__application {
+  .form__application-container {
     order: 2;
   }
 
-  .form__contacts {
+  .form__contacts-container {
     order: 3;
   }
 
-  .form__achievements {
+  .form__achievements-container {
     order: 4;
   }
 
-  .form__emotions {
+  .form__emotions-container {
     order: 5;
   }
 
-  .form-footer {
+  .form__footer-container {
     order: 6;
   }
 
@@ -315,7 +342,7 @@
     height: 190px;
   }
 
-  .form-footer {
+  .form__footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -335,23 +362,27 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form {
-    display: flex;
+  .form__main-wrapper {
+  /*  display: flex;
+    flex-flow: column nowrap;*/
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0 130px;
-  }
+
+    width: @desktop-wrap;
+    }
 
   .form__personal,
   .form__application {
     width: 435px;
+    box-sizing: border-box;
   }
 
   .form__contacts,
   .form__achievements,
   .form__emotions,
-  .form-footer {
-    width: 940px;
+  .form__footer {
+    width: @desktop-wrap;
+    box-sizing: border-box;
   }
 
   .form__legend {

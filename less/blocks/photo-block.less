@@ -5,7 +5,6 @@
 
 .photo-block__link {
   display: block;
-  margin: 0 20px;
 }
 
 .photo-block__image {
@@ -13,8 +12,9 @@
 }
 
 .photo-block__info-block {
-  margin: 0 20px;
+  box-sizing: border-box;
   padding: 20px;
+
   background-color: @bg-lite;
 }
 
@@ -39,7 +39,6 @@
   line-height: 24px;
   text-transform: uppercase;
 }
-
 
 .photo-block__comment {
   .local-reset();
@@ -81,7 +80,16 @@
 }
 
 .photo-block__link--of-day {
-  margin: 0;
+  height: 137px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  background-color: @border-color;
+}
+
+.photo-block__link--of-day img{
+  width: 100%;
+  height: auto;
 }
 
 
@@ -136,9 +144,9 @@
     margin-right: 0;
   }
 
-  .photo-block__image--of-day {
-    width: 100%;
+  .photo-block__link--of-day {
     height: 509px;
+    overflow: hidden;
   }
 
   .photo-block__info-block--of-day {
@@ -150,7 +158,7 @@
     min-height: 121px;
     box-sizing: border-box;
     padding: 21px;
-    margin: 0 20px;
+    margin: 0 auto;  /*  --- почему?*/
   }
 
   .photo-block__name-n-date--of-day {
@@ -177,7 +185,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photo-block__image {
+  .photo-block__link--of-day {
     height: 400px;
   }
 
@@ -187,14 +195,7 @@
   }
 
   .photo-block__info-block--of-day {
-/*    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    min-height: 121px;
-    box-sizing: border-box;*/
     padding: 28px;
-    margin: 0 130px;
+    margin: 0 auto;
   }
 }

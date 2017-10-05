@@ -5,9 +5,11 @@
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
   text-align: center;
 
-  padding: 17px;
+  padding: 18px;
   width: 280px;
   box-sizing: border-box;
 
@@ -16,4 +18,10 @@
   background-color: @green-color;
 
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .form-button {
+    width: 300px;
+  }
 }

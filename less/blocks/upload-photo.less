@@ -1,7 +1,3 @@
-/*.upload-photo {
-  background-color: @bg-lite;
-}*/
-
 .upload-photo__text {
   .local-reset();
   min-height: 153px;
@@ -11,20 +7,27 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-/*
-  background-color: white;*/
 }
 
 @media (min-width: @tablet-width) {
   .upload-photo__text {
-    padding: 67px 0;
+    padding: 47px 0;
+    padding-bottom: 67px;
 
     font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .upload-photo {
+    margin-bottom: 28px;
+  }
+
+
   .upload-photo__text {
-    padding: 57px 0;
+    min-height: 135px;
+
+    padding-top: 7px;
+    padding-bottom: 70px;
   }
 }

@@ -93,9 +93,8 @@
   background-color: white;
 }
 
-.form__list-checkbox,
-.form__list-radio-button {
-  .list-reset();
+.form__list-checkbox {
+  .local-reset();
   text-align: left;
   padding-bottom: 43px;
 }
@@ -104,11 +103,20 @@
   margin-bottom: 53px;
 }
 
+.form_column-checkbox:last-child .form__item-checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.form__list-radio-button {
+  .list-reset();
+  text-align: left;
+  padding-bottom: 43px;
+}
+
 .form__item-radio-button {
   margin-bottom: 45px;
 }
 
-.form__item-checkbox:last-child,
 .form__item-radio-button:last-child {
   margin-bottom: 0;
 }
@@ -359,7 +367,6 @@
   }
 
   .form__emotional-text {
-/*    vertical-align: top;*/
     height: 190px;
   }
 
@@ -441,21 +448,14 @@
 
   .form__list-checkbox {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 
-    height: 116px;
     padding-top: 57px;
+    padding-bottom: 58px;
   }
 
-  .form__item-checkbox {
-    .local-reset;
-    margin-bottom: 51px;
-    margin-right: 55px;
-  }
-
-  .form__item-checkbox:nth-child(2n) {
+  .form__item-checkbox:last-child {
     margin-bottom: 0;
   }
 
@@ -483,54 +483,4 @@
     display: inline;
     font-style: normal;
   }
-
-
-/*
-  .form__list-checkbox {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    height: 130px;
-  }
-
-  .form__item-checkbox {
-    .local-reset;
-    width: 260px;
-  }
-
-  .form__item-checkbox:nth-child(3n) {
-    margin-bottom: 50px;
-  }
-
-  .form__item-checkbox:last-child {
-    margin-bottom: 0;
-  }
-
-/*
-  .form__item-checkbox:nth-child(1) {
-    order: 1;
-  }
-
-  .form__item-checkbox:nth-child(2) {
-    order: 4;
-  }
-
-  .form__item-checkbox:nth-child(3) {
-    order: 2;
-  }
-
-  .form__item-checkbox:nth-child(4) {
-    order: 5;
-  }
-
-  .form__item-checkbox:nth-child(5) {
-    order: 3;
-  }
-
-  .form__item-checkbox:nth-child(6) {
-    order: 6;
-  }
-  */
 }

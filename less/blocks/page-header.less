@@ -1,5 +1,12 @@
 .page-header {
+  position: relative;
   width: 100%;
+
+  z-index: 2;
+}
+
+.page-header__top,
+.page-header__menu {
   background-color: @basic-color;
 }
 
@@ -27,17 +34,6 @@
   display: block;
 }
 
-.page-header__toggle {
-  .local-reset();
-  width: 23px;
-  height: 23px;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
-}
-
 .page-header__logo-image{
   fill: #ffffff;
 }
@@ -53,6 +49,34 @@
   }
 }
 
+.page-header__toggle {
+  .local-reset();
+  width: 23px;
+  height: 23px;
+
+  background-color: transparent;
+  border: none;
+  background: url("../img/icon-menu-cross.svg") 50% 50% no-repeat;
+
+  cursor: pointer;
+}
+
+.page-header--closed-menu .page-header__toggle {
+  width: 40px;
+  height: 24px;
+
+  background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
+}
+
+.page-header--closed-menu .page-header__top {
+  background-color: @transparent;
+  border: 0;
+}
+
+.page-header--closed-menu .page-header__menu {
+  position: absolute;
+  visibility: hidden;
+}
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
@@ -62,6 +86,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    .out();
     position: absolute;
     min-height: 110px;
     background-color: @transparent;
@@ -86,7 +111,6 @@
     min-height: 0;
   }
 
-
   .page-header__top {
     .local-reset;
     display: block;
@@ -97,6 +121,11 @@
 
   .page-header__menu {
     background-color: transparent;
+  }
+
+  .page-header--closed-menu .page-header__menu {
+    position: static;
+    visibility: visible;
   }
 
   .page-header__toggle {

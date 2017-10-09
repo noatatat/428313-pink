@@ -55,7 +55,7 @@
     width: 620px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .site-list__item {
@@ -65,8 +65,16 @@
   }
 
   .site-list__item a {
+    display: block;
+    padding: 10px 0;
+    margin-right: 84px;
+
     text-transform: none;
     line-height: 1;
     font-weight: normal;
+  }
+
+  .site-list__item:nth-child(4n) a {
+    margin-right: 0;
   }
 }

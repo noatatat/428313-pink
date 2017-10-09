@@ -7,7 +7,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  padding: 6px 20px;
+  padding: 6px 19px;
   background-color: @pink-color;
 
   color: white;
@@ -15,10 +15,19 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 @media (min-width: @tablet-width) {
+  .picture-of-day__title {
+    top: 55px;
+    transform: translateX(170px);
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .picture-of-day__title {
+    top: 54px;
+    transform: translateX(330px);
+  }
 }

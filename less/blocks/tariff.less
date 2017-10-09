@@ -209,17 +209,16 @@
   .tariff__controls {
     display: none;
   }
-}
 
   .tariff__item--hit .tariff__hit {
-    position: absolute;
     top: 4px;
     left: -32px;
   }
+}
 
 @media (min-width: @desktop-width) {
   .tariff {
-    padding-top: 65px;
+    padding-top: 145px;
     padding-bottom: 95px;
   }
 
@@ -242,6 +241,7 @@
 
   .tariff__name {
     font-size: 18px;
+    padding-bottom: 2px;
   }
 
   .tariff__price {
@@ -258,5 +258,10 @@
 
   .tariff__name-table .tariff__feature {
     padding: 0 24px;
+  }
+
+  .tariff__item--hit .tariff__hit {
+    top: 10px;
+    left: -26px;
   }
 }

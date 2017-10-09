@@ -34,27 +34,34 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   width: 208px;
   margin-bottom: 40px;
 }
 
 .filter__name {
   display: block;
-  width: 48px;
-  height: 44px;
+  background-size: cover;
   cursor: pointer;
 }
 
 .filter__name--crop {
-  background: url("../img/icon-editor-crop.svg") 0 50% no-repeat;
+  width: 44px;
+  height: 44px;
+  background: url("../img/icon-editor-crop.svg") center no-repeat;
 }
 
 .filter__name--fill {
-  background: url("../img/icon-editor-fill.svg") 0 50% no-repeat;
+  width: 48px;
+  height: 43px;
+  background: url("../img/icon-editor-fill.svg") center no-repeat;
 }
 
 .filter__name--contrast {
-  background: url("../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  background: url("../img/icon-editor-contrast.svg") center no-repeat;
 }
 
 .filter__range {
@@ -66,14 +73,12 @@
 
 .filter__scale {
   height: 2px;
-  width: 240px;
-  margin: 0 auto;
   background-color: black;
 }
 
 .filter__handle {
   position: absolute;
-  top: -7px;
+  top: -6px;
   left: 193px;
   height: 10px;
   width: 10px;
@@ -82,6 +87,12 @@
   border-radius: 50%;
 
   cursor: pointer;
+}
+
+.filter__range--crop,
+.filter__range--fill,
+.filter__range--contrast {
+  display: none;
 }
 
 .filter__buttons {
@@ -108,9 +119,10 @@
 
   .filter__image-upload-block {
     .local-reset();
+    flex: 0 0 auto;
     width: 300px;
     height: 400px;
-    margin-right: 45px;
+    margin-right: auto;
   }
 
   /*---------------------------*/
@@ -120,6 +132,7 @@
   }
 
   .filter__control-panel {
+    flex: 0 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -135,27 +148,78 @@
     align-items: stretch;
 
     width: 100%;
+    padding-right: 20px;
     box-sizing: border-box;
   }
 
   .filter__options li {
-  /*  .out;*/
-    height: 55px;
-    box-sizing: border-box;
-  /*  padding: 4px 0;*/
-    margin-bottom: 17px;
-    text-align: left;
-
     border-bottom: 1px solid @border-color;
   }
 
-  .filter__name {
-    background-size: 50%;
-    display: inline-block;
+  .filter__options li:first-child {
+    margin-top: -15px;
   }
 
-  .filter__range {
+  .filter__block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+  }
+
+  .filter__name {
+    .local-reset;
+    background-size: cover;
+  }
+
+  .filter__name--crop {
+    width: 22px;
+    height: 22px;
+    margin-left: 2px;
+  }
+
+  .filter__name--fill {
+    width: 24px;
+    height: 22px;
+    margin-left: 2px;
+    margin-top: 3px;
+  }
+
+  .filter__name--contrast {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+
+  .filter__range--all {
     display: none;
+  }
+
+  .filter__range--crop,
+  .filter__range--fill,
+  .filter__range--contrast {
+    .local-reset();
+    display: block;
+    width: 202px;
+  }
+/*
+  .filter__range {
+    .local-reset();
+    width: 202px;
+  }*/
+
+  .filter__range--crop .filter__handle {
+    left: 150px;
+  }
+
+  .filter__range--fill .filter__handle {
+    left: 25px;
+  }
+
+  .filter__range--contrast .filter__handle {
+    left: 100px;
   }
 
   .filter__buttons {
@@ -189,25 +253,60 @@
   }
 
   .filter__image-upload-block {
-    margin-right: 93px;
+    margin-right: auto;
   }
 
   .filter__control-panel {
+    flex-shrink: 0;
     width: 410px;
     box-sizing: border-box;
   }
 
-  .filter__name {
-    background-size: initial;
+  .filter__options {
+    padding-right: 30px;
+  }
+
+    .filter__name--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .filter__name--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter__name--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .filter__range {
+    width: 288px;
+  }
+
+  .filter__range--crop .filter__handle {
+    left: 70px;
+  }
+
+  .filter__range--fill .filter__handle {
+    left: 245px;
+  }
+
+  .filter__range--contrast .filter__handle {
+    left: 160px;
   }
 
   .filter__buttons {
     .local-reset();
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     border-top: 0;
   }
 
   .filter__button {
-    display: inline-block;
     width: 185px;
     margin: 0;
   }

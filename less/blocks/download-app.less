@@ -5,13 +5,10 @@
 
 .download-app__picture {
   width: 100%;
-  min-height: 465px;
-/*  min-height: 395px;*/
-  margin-top: -70px;
+  min-height: 464px;
+  margin-top: -69px;
   background-color: @basic-color;
-  background:
-/*    url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat,*/
-    url("../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
   background-size: cover;
 }
 
@@ -59,19 +56,20 @@
   padding: 0 18px;
 
   color: white;
+  letter-spacing: 0;
 }
 
 @media (min-width: @tablet-width) {
   .download-app {
+    .out();
     box-sizing: border-box;
-    min-height: 620px;
+    min-height: 729px;
     background-color: transparent;
   }
 
   .download-app__picture {
     margin-top: 0;
     min-height: 729px;
-    //min-height: 620px;
     margin-top: -109px;
     background-color: @bg-dark;
   }

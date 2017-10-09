@@ -1,13 +1,5 @@
-.temporary_block1 {
-  width: 100%;
-  height: 28px;
-  background-color: @border-color;
-  &-abs {
-    position: absolute;
-  }
-}
-
 body {
+  position: relative;
   min-width: 320px;
   height: 100%;
   margin: 0;
@@ -41,35 +33,12 @@ img {
     width: @tablet-wrap;
     margin: 0 auto;
   }
-
-  /*******************************************************/
-  .temporary_block1 {
-    height: 50px;
-    &-abs {
-      width: 100vw;
-      height: 69px;
-    }
-  }
-  /*******************************************************/
 }
 
 @media (min-width: @desktop-width) {
   .wrapper {
     width: @desktop-wrap;
   }
-
-  /*******************************************************/
-  .temporary_block1 {
-    height: 96px;
-    &-abs {
-      height: 103px;
-    }
-    &-2 {
-      height: 82px;
-    }
-  }
-  /*******************************************************/
-
 }
 
 

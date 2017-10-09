@@ -1,5 +1,6 @@
 .contact {
   .list-reset();
+
 }
 
 .contact__name,
@@ -8,7 +9,7 @@
 }
 
 .contact__item:not(:last-child) {
-  padding-bottom: 22px;
+  padding-bottom: 25px;
 }
 
 .contact__item:nth-child(2) {
@@ -16,18 +17,21 @@
 }
 
 .contact__name {
+  padding-bottom: 3px;
+
   font-size: 18px;
   line-height: 1.2;
   font-weight: bold;
-  padding-bottom: 5px;
+  letter-spacing: 0;
 }
 
 .contact__info {
+  color: @pink-color;
   font-size: 24px;
   line-height: 1.2;
   font-weight: lighter;
-  color: @pink-color;
-  }
+  letter-spacing: 0;
+}
 
 @media (min-width: @tablet-width) {
   .contact {

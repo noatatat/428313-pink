@@ -5,7 +5,7 @@
 @media (min-width: @tablet-width) {
   .advertisement {
     display: block;
-    padding: 95px 0 100px 0;
+    padding: 100px 0;
     background-color: white;
   }
 
@@ -31,12 +31,13 @@
 
   .advertisement__title {
     .local-reset();
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 
     color: black;
     font-size: 30px;
     line-height: 1.2;
     font-weight: bold;
+    letter-spacing: 0;
   }
 
   .advertisement__text {
@@ -53,14 +54,15 @@
 
 @media (min-width: @desktop-width) {
   .advertisement {
-    padding: 90px 0 115px 0;
+    padding-top: 90px;
+    padding-bottom: 115px;
     background-color: @bg-lite;
   }
 
   .advertisement__wrapper {
     position: relative;
     box-sizing: border-box;
-    padding: 0 0 0 365px;
+    padding: 0 50px 0 365px;
   }
 
   .advertisement__picture {
@@ -73,7 +75,11 @@
   }
 
   .advertisement__title {
-    padding-bottom: 22px;
+    padding-bottom: 20px;
+  }
+
+  .advertisement__title br {
+    display: none;
   }
 
   .advertisement__text {

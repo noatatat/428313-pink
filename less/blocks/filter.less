@@ -30,13 +30,14 @@
 
 .filter__options {
   .list-reset();
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   width: 208px;
-  margin-bottom: 40px;
+  margin-bottom: 74px;
 }
 
 .filter__name {
@@ -93,6 +94,18 @@
 .filter__range--fill,
 .filter__range--contrast {
   display: none;
+}
+/*
+.filter__active {
+  position: relative;
+}*/
+
+.filter__active .filter__range {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .filter__buttons {
@@ -192,10 +205,10 @@
     height: 16px;
     margin-left: 8px;
   }
-
+/*
   .filter__range--all {
     display: none;
-  }
+  }*/
 
   .filter__range--crop,
   .filter__range--fill,

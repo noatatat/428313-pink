@@ -76,7 +76,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 40px;
   font-weight: normal;
   font-size: 14px;
@@ -162,7 +162,7 @@
 .form__contacts {
   .local-reset();
   border: 0;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 40px;
 }
 
@@ -336,6 +336,7 @@
   }
 
   .form__contacts .form__field-block {
+    position: relative;
     flex-flow: column wrap;
 
     margin-bottom: 29px;
@@ -345,9 +346,20 @@
     margin-bottom: 0px;
   }
 
+  .form__contacts .form__field-block::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2px;
+    right: 2px;
+    width: 58px;
+    height: 58px;
+    background-color: @border-color;
+  }
+
   .form__contacts .form__label {
     order: 2;
-    padding-left: 15px;
+    padding-left: 20px;
     margin: 0;
   }
 
@@ -385,6 +397,7 @@
 
   .form__footnote-text {
     .local-reset();
+    padding-top: 7px;
   }
 }
 
@@ -438,8 +451,16 @@
 
   .form__contacts .form__field-block {
     .local-reset();
-    width: 376px;
+    width: 374px;
   }
+
+  /*.form__field-block:nth-child(2) .form__label {
+    padding-left: 20px;
+  }
+
+  .form__personal .form__label {
+    padding-left: 0;
+  }*/
 
   .form__contacts .form__input {
     margin-bottom: 10px;

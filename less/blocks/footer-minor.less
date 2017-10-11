@@ -1,11 +1,15 @@
 .footer-minor {
   background: white;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .footer-minor__logo-pink {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-minor__link {
+  display: block;
 }
 
 .footer-minor__social-list {
@@ -15,7 +19,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   width: 178px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 
@@ -56,33 +60,59 @@
 
 .footer-minor__academy-logo {
   display: block;
+  margin-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .footer-minor {
-    .out();
+    .local-reset();
+  }
+
+  .footer-minor__wrapper {
+    height: 127px;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-
-    height: 127px;
-    padding: 20px;
-    box-sizing: border-box;
   }
+
 
   .footer-minor__logo-pink,
   .footer-minor__social-list,
   .footer-minor__copyright {
-    .out();
     .local-reset();
+  }
+
+  .footer-minor__logo-pink {
+    margin-bottom: 10px;
+  }
+
+  .footer-minor__copyright {
+    margin-top: 0;
+  }
+
+  .footer-minor__social-list {
+    margin-right: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .footer-minor {
+  .footer-minor__wrapper {
     height: 197px;
-    padding: 0 130px;
   }
 
+  .footer-minor__social-list {
+    margin-right: 0;
+    margin-left: 14px;
+  }
+
+  .footer-minor__copyright {
+    //margin-top: 2px;
+  }
+
+  .footer-minor__built {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
 }

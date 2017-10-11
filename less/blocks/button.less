@@ -5,17 +5,33 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  letter-spacing: 0;
   text-align: center;
 
-  padding: 17px;
-  width: 275px;
+  padding: 15px 0;
+  width: 280px;
+  height: 55px;
+
   box-sizing: border-box;
 
   border: 3px solid white;
-  border-radius: calc(275px * 0.5);
+  border-radius: 27.5px;
+  /*calc(275px * 0.5);*/
   background-color: transparent;
 
   cursor: pointer;
+}
+
+.button--pink {
+  color: @pink-color;
+  //letter-spacing: 0.35px;
+  border-color: @pink-color;
+}
+
+.button--grey {
+  color: @border-color;
+  //letter-spacing: 0.35px;
+  border-color: @border-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -27,5 +43,7 @@
 @media (min-width: @desktop-width) {
   .button {
     width: 300px;
+
+    font-size: 21px;
   }
 }

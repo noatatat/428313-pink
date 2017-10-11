@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="page-header">
+    <header class="page-header">
+      <!--page-header--closed-menu -->
+      <div class="wrapper page-header__main-wrapper">
         <div class="page-header__top">
-          <a class="page-header__logo">
-            <span class="visually-hidden">Логотип сервиса Pink</span>
-            <svg  class="page-header__logo-image" version="1" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
-              <path d="M0 1.45C0 .74.58.16 1.256.16h7.18c5.087 0 8.436 2.705 8.436 7.148v.064c0 4.86-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.858 0 22.278 0 21.57V1.45zm8.114 10.978c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.918h5.57zM21.73 1.288C21.73.58 22.307 0 22.982 0c.71 0 1.288.58 1.288 1.288V21.57c0 .71-.578 1.29-1.287 1.29-.676 0-1.255-.58-1.255-1.29V1.29zM30.87 1.32c0-.676.58-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256C47.452.58 47.998 0 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.19-1.158 1.19h-.13c-.547 0-.933-.32-1.32-.77L33.35 4.153v17.45c0 .675-.548 1.255-1.256 1.255-.677 0-1.224-.58-1.224-1.257V1.32zM56.3 1.288C56.3.58 56.88 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.33L71.69.452c.29-.257.58-.45.998-.45.676 0 1.224.612 1.224 1.256 0 .354-.16.644-.42.9l-7.983 7.92 8.563 10.562c.225.29.354.547.354.934 0 .676-.58 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.86v4.895c0 .708-.58 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
-            </svg>
-          </a>
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div class="wrapper page-header__wrapper">
+            <a class="page-header__logo">
+              <span class="visually-hidden">Логотип сервиса Pink</span>
+              <svg  class="page-header__logo-image" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
+                <path d="M0 1.45C0 .74.58.16 1.256.16h7.18c5.087 0 8.436 2.705 8.436 7.148v.064c0 4.86-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.858 0 22.278 0 21.57V1.45zm8.114 10.978c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.918h5.57zM21.73 1.288C21.73.58 22.307 0 22.982 0c.71 0 1.288.58 1.288 1.288V21.57c0 .71-.578 1.29-1.287 1.29-.676 0-1.255-.58-1.255-1.29V1.29zM30.87 1.32c0-.676.58-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256C47.452.58 47.998 0 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.19-1.158 1.19h-.13c-.547 0-.933-.32-1.32-.77L33.35 4.153v17.45c0 .675-.548 1.255-1.256 1.255-.677 0-1.224-.58-1.224-1.257V1.32zM56.3 1.288C56.3.58 56.88 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.33L71.69.452c.29-.257.58-.45.998-.45.676 0 1.224.612 1.224 1.256 0 .354-.16.644-.42.9l-7.983 7.92 8.563 10.562c.225.29.354.547.354.934 0 .676-.58 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.86v4.895c0 .708-.58 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
+              </svg>
+            </a>
+            <button class="page-header__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
         </div>
-        <nav class="page-header__menu main-nav">
-          <ul class="main-nav__list site-list">
+        <nav class="page-header__menu">
+          <ul class="page-header__list site-list">
             <li class="site-list__item">
               <a>Главная</a>
             </li>
@@ -32,19 +35,21 @@
               <a href="contest.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="academy.html">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="main-page">
-        <h1 class="visually-hidden">Страница приложения Pink</h1>
-
-        <section class="download-app">
-          <h2 class="visually-hidden">Скачать приложение</h2>
-          <div class="download-app__picture"></div>
+    <main class="main-page">
+      <h1 class="visually-hidden">Страница приложения Pink</h1>
+      <section class="download-app">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <div class="download-app__picture"></div>
+        <div class="wrapper download-app__wrapper">
           <div class="download-app__block">
+
             <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
             <a class="download-app__button button" href="">Скачать приложение</a>
             <ul class="download-app__market-list">
@@ -68,14 +73,20 @@
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="feature">
-          <h2 class="visually-hidden">Характеристки приложения</h2>
-          <div class="feature__intro-container">
+      <section class="feature">
+        <h2 class="visually-hidden">Характеристки приложения</h2>
+
+        <div class="feature__intro-container">
+          <div class="wrapper feature__wrapper">
             <p class="feature__intro-text">Устали от серости мегаполиса?</p>
-            <p class="feature__intro-text">Нам есть, что вам <br>предложить!</p>
+            <p class="feature__intro-text">Нам есть, что вам<br>предложить!</p>
           </div>
+        </div>
+        <div class="triangle triangle__feature"></div>
+        <div class="wrapper feature__wrapper feature__list-wrapper">
           <ul class="feature__list">
             <li class="feature__item">
               <h3 class="feature__title">Поднимает настроение</h3>
@@ -83,7 +94,7 @@
             </li>
             <li class="feature__item">
               <h3 class="feature__title">Меняет мир вокруг</h3>
-              <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
             </li>
             <li class="feature__item">
               <h3 class="feature__title">Заводит новых друзей</h3>
@@ -91,22 +102,26 @@
             </li>
           </ul>
           <div class="feature__image-block">
-            <img class="feature__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320px" alt="Телефон с розоавм экраном">
+            <img class="feature__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Телефон с розовым экраном">
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="advertisement">
-          <h2 class="visually-hidden">Исследование британских ученых</h2>
+      <section class="advertisement">
+        <h2 class="visually-hidden">Исследование британских ученых</h2>
+        <div class="wrapper advertisement__wrapper">
           <div class="advertisement__picture"></div>
           <div class="advertisement__block">
-            <h3 class="advertisement__title">Эффект на&nbsp;24&nbsp;часа!</h3>
-            <p class="advertisement__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h3 class="advertisement__title">Эффект <br> на&nbsp;24&nbsp;часа!</h3>
+            <p class="advertisement__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
             <a class="advertisement__link">Узнать больше об исследовании</a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="review">
-          <h2 class="visually-hidden">Отзывы</h2>
+      <section class="review">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="wrapper review__wrapper">
           <div class="slider">
             <div class="review__list slider__inner">
               <blockquote class="review__item slider__item">
@@ -130,10 +145,15 @@
                 <div class="slider__button"></div>
                 <div class="slider__button"></div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-        <section class="tariff">
-          <h2 class="visually-hidden">Тарифы</h2>
+      <div class="triangle triangle--review"></div>
+
+      <section class="tariff">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="wrapper tariff__wrapper">
           <div class="tariff__window slider">
             <div class="tariff__list slider__inner">
               <table class="tariff__item slider__item tariff__name-table">
@@ -241,11 +261,13 @@
                 <div class="slider__button"></div>
             </div>
           </div>
-        </section>
-      </main>
-      <footer class="main-footer">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="main-footer__block">
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="main-footer__block">
+        <div class="wrapper main-footer__wrapper">
           <p class="main-footer__text">Остались вопросы?<br>Свяжитесь с нами!</p>
           <ul class="main-footer__contacts contact">
             <li class="contact__item">
@@ -262,12 +284,15 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="ул. Большая Конюшенная, 19/8">
-        </div>
-      </footer>
+      </div>
+      <div class="triangle triangle__shape"></div>
+      <div class="main-footer__map">
+        <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="ул. Большая Конюшенная, 19/8">
+      </div>
+    </footer>
 
-      <footer class="second-footer footer-minor">
+    <footer class="second-footer footer-minor">
+      <div class="wrapper footer-minor__wrapper">
         <p class="footer-minor__logo-pink">
           <a class="footer-minor__link" href="index.html">
             <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сервиса Pink">
@@ -288,14 +313,13 @@
 
         <p class="footer-minor__copyright">
           <b class="footer-minor__built">Разработано</b>
-          <a class="footer-minor__academy-link" href="https://htmlacademy.ru">
+          <a class="footer-minor__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="footer-minor__academy-logo"
             src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </p>
-      </footer>
-
-
-    </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,16 +1,17 @@
 .download-app {
   background-color: @bg-dark;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
 }
 
 .download-app__picture {
   width: 100%;
-  min-height: 395px;
+  min-height: 464px;
+  margin-top: -69px;
   background-color: @basic-color;
-/*  background:
-    url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") bottom no-repeat;*/
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
+  background-size: cover;
 }
+
 
 .download-app__slogan {
   display: none;
@@ -29,7 +30,7 @@
 
   width: 205px;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .download-app__item {
@@ -43,11 +44,11 @@
 }
 
 .download-app__item--google-play {
-  background: url("../img/logo-android.svg") 50% 50% no-repeat;
+  background: url("../img/logo-android.svg") 50% 100% no-repeat;
 }
 
 .download-app__item--microsoft-store {
-  background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;
+  background: url("../img/logo-microsoft.svg") 50% 100% no-repeat;
 }
 
 .download-app__text {
@@ -55,17 +56,20 @@
   padding: 0 18px;
 
   color: white;
+  letter-spacing: 0;
 }
 
 @media (min-width: @tablet-width) {
   .download-app {
     box-sizing: border-box;
-    min-height: 730px;
+    min-height: 729px;
     background-color: transparent;
   }
 
   .download-app__picture {
-    min-height: 730px;
+    margin-top: 0;
+    min-height: 729px;
+    margin-top: -109px;
     background-color: @bg-dark;
   }
 
@@ -79,13 +83,23 @@
     line-height: 1.2;
   }
 
-
   .download-app__block {
-    .out();
     width: 300px;
-    margin: -522px 340px 0 20px;
+    margin: -525px 340px 0 0;
   }
 
+  .download-app__button {
+    margin-bottom: 45px;
+  }
+
+  .download-app__market-list {
+    margin-bottom: 35px;
+  }
+
+  .download-app__text {
+    font-size: 18px;
+    padding: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -94,7 +108,13 @@
   }
 
   .download-app__picture {
+    margin-top: 0;
     min-height: 853px;
+  }
+
+  .download-app__block {
+    width: 300px;
+    margin: -635px 770px 0 0;
   }
 
   .download-app__slogan {
@@ -103,9 +123,12 @@
     font-size: 50px;
   }
 
-  .download-app__block {
-    .out();
-    width: 300px;
-    margin: -632px 770px 0 130px;
+  .download-app__button {
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
+
+  .download-app__market-list {
+    margin-bottom: 60px;
   }
 }

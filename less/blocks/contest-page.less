@@ -1,20 +1,33 @@
+/*.contest-page__wrapper {
+  background-color: transparent;
+}
+*/
+.contest-page__top {
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
+  background-size: cover;
+}
+
 .contest-page__title {
   .local-reset();
-  background: url("../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
-  padding: 90px 50px;
-  min-height: 238px;
+  min-height: 239px;
   box-sizing: border-box;
+  padding-top: 99px;
+  padding-bottom: 30px;
+  margin-top: -69px;
+
 
   color: white;
   font-size: 24px;
   line-height: 1.2;
   font-weight: normal;
+  letter-spacing: 0;
   vertical-align: middle;
 }
 
 .contest-page__text {
   .local-reset();
-  padding: 50px 20px;
+  padding-top: 45px;
+  padding-bottom: 33px;
 
   font-size: 14px;
   line-height: 30px;
@@ -27,14 +40,18 @@
 
 @media (min-width: @tablet-width) {
   .contest-page__title {
-    padding: 160px 50px 90px 50px;
-    min-height: 440px;
+    min-height: 439px;
+    padding-top: 179px;
+    padding-bottom: 80px;
+    margin-top: -109px;
 
     font-size: 50px;
   }
 
   .contest-page__text {
-    padding: 94px 85px;
+    padding: 0 40px;
+    padding-top: 92px;
+    padding-bottom: 72px;
 
     font-size: 18px;
   }
@@ -46,15 +63,19 @@
 
 @media (min-width: @desktop-width) {
   .contest-page__title {
-    padding: 181px 80px 90px 80px;
     min-height: 394px;
+    padding: 0 80px;
+    padding-top: 173px;
+    padding-bottom: 90px;
+    margin-top: 0;
 
     font-size: 50px;
-    background-color: @basic-color;
+    /*background-color: @basic-color;*/
   }
 
   .contest-page__text {
-    padding: 94px 230px;
+    padding: 92px 90px;
+    padding-bottom: 85px;
 
     font-size: 18px;
   }

@@ -1,6 +1,8 @@
 .upload-photo__text {
   .local-reset();
-  padding: 50px 20px;
+  min-height: 155px;
+  box-sizing: border-box;
+  padding: 23px 0;
 
   font-size: 14px;
   line-height: 30px;
@@ -9,14 +11,21 @@
 
 @media (min-width: @tablet-width) {
   .upload-photo__text {
-    padding: 67px 20px;
+    padding: 47px 0;
+    padding-bottom: 67px;
 
     font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .upload-photo {
+    margin-bottom: 28px;
+  }
   .upload-photo__text {
-    padding: 57px 130px;
+    min-height: 135px;
+
+    padding-top: 7px;
+    padding-bottom: 60px;
   }
 }

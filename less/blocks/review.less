@@ -1,15 +1,20 @@
 .review {
-  .out();
   line-height: 30px;
-  padding-bottom: 35px;
-  margin-top: -43px;
+  padding-bottom: 40px;
+  margin-top: -40px;
+
+  background-color: white;
+}
+
+.review__wrapper {
+  width: 320px;
 }
 
 .review__item {
   .local-reset();
   width: 100%;
   box-sizing: border-box;
-  padding: 35px 20px 35px 20px;
+  padding: 42px 20px 35px 20px;
 
   background-color: white;
 }
@@ -17,12 +22,13 @@
 .review__author {
   display: block;
   .local-reset();
-  padding-bottom: 12px;
+  padding-bottom: 14px;
 
+  color: black;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
-  color: black;
+  letter-spacing: 0;
 }
 
 .review__details {
@@ -37,12 +43,19 @@
 @media (min-width: @tablet-width) {
   .review {
     margin-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .review__wrapper {
+    width: @tablet-width;
   }
 
   .review__item {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+
+    padding: 28px 20px 32px 20px;
   }
 
   .review__author {
@@ -50,34 +63,37 @@
     order: 2;
 
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 30px;
   }
 
   .review__details {
     .local-reset();
     display: block;
+    margin-top: 2px;
 
     font-weight: normal;
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 30px;
+    letter-spacing: 0.25px;
   }
 
   .review__text {
     order: 1;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 
     font-size: 18px;
-    line-height: 1.66;
+    line-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .review__item {
-    padding: 180px 220px 35px 220px;
-  }
-
   .review {
     position: relative;
+    padding-bottom: 0;
+  }
+
+  .review__wrapper {
+    width: @desktop-width;
   }
 
   .review::before {
@@ -110,10 +126,22 @@
       background-color: @pink-color;
     }
     &::before {
-      left: 130px;
+      left: 10px;
     }
     &::after {
-      right: 130px;
+      right: 10px;
+    }
+
+    .review__item {
+      padding: 185px 120px 44px 120px;
+    }
+
+    .review__author {
+      font-size: 24px;
+    }
+
+    .review__details {
+      font-size: 18px;
     }
   }
 }

@@ -1,9 +1,20 @@
+.page-header {
+  position: relative;
+  width: 100%;
+
+  z-index: 2;
+}
+
 .page-header__top,
 .page-header__menu {
   background-color: @basic-color;
 }
 
-.page-header__top {
+.page-header__main-wrapper {
+  width: auto;
+}
+
+.page-header__wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -11,25 +22,16 @@
 
   box-sizing: border-box;
   min-height: 69px;
-  padding: 22px 20px;
+  padding: 22px 0  24px 0;
+}
+
+.page-header__top {
   border-bottom: 1px solid #000000;
 }
 
 .page-header__logo,
 .page-header__logo-image {
   display: block;
-}
-
-.page-header__toggle {
-  .out();
-  .local-reset();
-  width: 23px;
-  height: 23px;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
 }
 
 .page-header__logo-image{
@@ -47,32 +49,68 @@
   }
 }
 
+.page-header__toggle {
+  .local-reset();
+  width: 23px;
+  height: 23px;
+
+  background-color: transparent;
+  border: none;
+  background: url("../img/icon-menu-cross.svg") 50% 50% no-repeat;
+
+  cursor: pointer;
+}
+
+.page-header--closed-menu .page-header__toggle {
+  width: 40px;
+  height: 24px;
+
+  background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
+}
+
+.page-header--closed-menu .page-header__top {
+  background-color: @transparent;
+  border: 0;
+}
+
+.page-header--closed-menu .page-header__menu {
+  position: absolute;
+  visibility: hidden;
+}
 
 @media (min-width: @tablet-width) {
-  .page-header__top {
+  .page-header__wrapper {
     min-height: 109px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    .out();
+    position: absolute;
+    min-height: 110px;
+    background-color: @transparent;
+  }
+
+  .page-header__main-wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    position: absolute;
     box-sizing: border-box;
     min-height: 110px;
-    width: @desktop-width;
+    width: @desktop-wrap;
+    margin: 0 auto;
+    padding: 22px 0;
+  }
 
-    padding: 22px 130px;
-    background-color: @transparent;
+  .page-header__wrapper {
+    .local-reset();
+    width: auto;
+    min-height: 0;
   }
 
   .page-header__top {
-    .out();
     .local-reset;
     display: block;
     min-height: 0;
@@ -81,8 +119,12 @@
   }
 
   .page-header__menu {
-    .out();
     background-color: transparent;
+  }
+
+  .page-header--closed-menu .page-header__menu {
+    position: static;
+    visibility: visible;
   }
 
   .page-header__toggle {

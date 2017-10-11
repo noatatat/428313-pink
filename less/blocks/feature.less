@@ -1,13 +1,18 @@
+.feature {
+  background-color: @bg-lite;
+}
+
 .feature__intro-container {
   background-color: white;
-  padding: 32px 20px;
+  padding: 41px 0 30px 0;
 }
 
 .feature__intro-text {
   .local-reset();
   font-size: 24px;
   line-height: 1.2;
-  padding-bottom: 36px;
+  letter-spacing: 0;
+  padding-bottom: 30px;
 }
 
 .feature__intro-text:last-child {
@@ -16,21 +21,21 @@
 
 .feature__list {
   .list-reset();
-  padding: 36px 20px 41px 20px;
-  background-color: @bg-lite;
+  padding: 83px 0 39px 0;
 }
 
 .feature__item:not(:last-child) {
-  padding-bottom: 41px;
+  padding-bottom: 32px;
 }
 
 .feature__title {
   .local-reset();
-  padding-bottom: 16px;
+  padding-bottom: 11px;
 
   color: black;
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 0;
 }
 
 .feature__text {
@@ -39,19 +44,19 @@
 }
 
 .feature__image-block {
-  background-color: @bg-lite;
+  /*background-color: @bg-lite;*/
+  height: 320px;
   line-height: 0;
 }
 
 @media (min-width: @tablet-width) {
   .feature {
-    position: relative;
     overflow: hidden;
   }
 
   .feature__intro-container {
     background-color: white;
-    padding: 48px 20px;
+    padding: 48px 0;
   }
 
   .feature__intro-text {
@@ -62,9 +67,18 @@
     padding-bottom: 0;
   }
 
+  .feature__list-wrapper {
+    position: relative;
+  }
+
   .feature__list {
-    .out();
-    padding-left: 330px;
+    padding-left: 310px;
+    padding-top: 73px;
+    padding-bottom: 40px;
+  }
+
+  .feature__item:not(:last-child) {
+    padding-bottom: 35px;
   }
 
   .feature__title {
@@ -78,20 +92,24 @@
   .feature__image-block {
     .local-reset();
     position: absolute;
-    top: 240px;
+    bottom: -7px;
     left: 0;
     width: 268px;
-    height: 547px;
+    height: 484px;
 
-    background-color: @pink-color;
+    /*background-color: @pink-color;*/
   }
 
+  .feature__image-block img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .feature__intro-container {
     background-color: white;
-    padding: 76px 20px 176px 20px;
+    padding: 65px 0 90px 0;
   }
 
   .feature__intro-text {
@@ -104,12 +122,10 @@
     justify-content: space-between;
 
     width: 940px;
-    padding: 265px 130px 70px 130px;
-    /*margin: 0 auto;*/
+    padding: 345px 0 70px 0;
   }
 
   .feature__item {
-    .out();
     position: relative;
     width: 300px;
     box-sizing: border-box;
@@ -124,7 +140,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: -320px;
+    top: -358px;
     left: 0;
 
     width: 300px;
@@ -135,7 +151,7 @@
 
 
   .feature__title {
-    padding-bottom: 32px;
+    padding-bottom: 25px;
 
     text-align: center;
     font-size: 30px;

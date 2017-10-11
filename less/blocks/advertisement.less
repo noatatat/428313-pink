@@ -4,16 +4,21 @@
 
 @media (min-width: @tablet-width) {
   .advertisement {
-    position: relative;
     display: block;
-    padding: 100px 40px 100px 330px;
+    padding: 100px 0;
     background-color: white;
+  }
+
+  .advertisement__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 10px 0 310px;
   }
 
   .advertisement__picture {
     position: absolute;
-    top: 60px;
-    left: 20px;
+    top: -35px;
+    left: 0;
     width: 238px;
     height: 276px;
     background-color: @pink-color;
@@ -26,17 +31,18 @@
 
   .advertisement__title {
     .local-reset();
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
     color: black;
     font-size: 30px;
     line-height: 1.2;
     font-weight: bold;
+    letter-spacing: 0;
   }
 
   .advertisement__text {
     .local-reset();
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 
   .advertisement__link {
@@ -48,21 +54,37 @@
 
 @media (min-width: @desktop-width) {
   .advertisement {
-    padding: 100px 130px 115px 500px;
+    padding-top: 90px;
+    padding-bottom: 115px;
     background-color: @bg-lite;
   }
 
+  .advertisement__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 50px 0 365px;
+  }
+
   .advertisement__picture {
-    top: 7px;
-    left: 130px;
+    top: -90px;
+    left: 0;
     width: 298px;
     height: 345px;
     background-color: @pink-color;
     border-radius: 169px;
   }
 
+  .advertisement__title {
+    padding-bottom: 23px;
+  }
+
+  .advertisement__title br {
+    display: none;
+  }
+
   .advertisement__text {
     font-size: 18px;
+    padding-bottom: 33px;
     line-height: 1.66;
   }
 

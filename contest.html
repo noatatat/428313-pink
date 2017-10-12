@@ -145,11 +145,11 @@
                 <fieldset class="form__contacts">
                   <h3 class="form__legend">Контактная информация</h3>
                   <div class="form__contacts-block">
-                    <div class="form__field-block">
+                    <div class="form__field-block form__field-block--phone">
                       <label class="form__label" for="phone">Номер телефона </label>
                       <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
                     </div>
-                    <div class="form__field-block">
+                    <div class="form__field-block form__field-block--mail">
                       <label class="form__label" for="email">Адрес почты </label>
                       <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
                     </div>
@@ -245,7 +245,8 @@
       </div>
     </footer>
 
-    <section class="info-window info-window--error modal modal__on">
+    <!-- class="modal-on" -->
+    <section class="info-window info-window--error modal">
       <div class="wrapper info-window__wrapper">
         <h2 class="info-window__title">Что-то пошло не&nbsp;так!</h2>
         <p class="info-window__text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
@@ -253,7 +254,7 @@
       </div>
     </section>
 
-    <section class="info-window info-window--request-ok modal modal__on">
+    <section class="info-window info-window--request-ok modal">
       <div class="wrapper info-window__wrapper">
         <h2 class="info-window__title">Ваша заявка отправлена</h2>
         <p class="info-window__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>

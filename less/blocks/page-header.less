@@ -30,12 +30,14 @@
 }
 
 .page-header__logo,
-.page-header__logo-image {
+.page-header__logo picture,
+.page-header__logo img {
   display: block;
 }
 
-.page-header__logo-image{
-  fill: #ffffff;
+.page-header__logo img{
+  width: 75px;
+  height: 22px;
 }
 
 .page-header__logo[href] {
@@ -81,6 +83,15 @@
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     min-height: 109px;
+  }
+
+  .page-header__logo {
+    margin-top: -12px;
+  }
+
+  .page-header__logo img{
+    width: 147px;
+    height: 40px;
   }
 }
 

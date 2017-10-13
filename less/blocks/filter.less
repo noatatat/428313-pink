@@ -95,10 +95,6 @@
 .filter__range--contrast {
   display: none;
 }
-/*
-.filter__active {
-  position: relative;
-}*/
 
 .filter__active .filter__range {
   display: block;
@@ -161,7 +157,7 @@
     align-items: stretch;
 
     width: 100%;
-    padding-right: 20px;
+    //padding-right: 20px;
     box-sizing: border-box;
   }
 
@@ -180,6 +176,7 @@
     align-items: center;
 
     height: 70px;
+    padding-right: 20px;
   }
 
   .filter__name {
@@ -205,10 +202,13 @@
     height: 16px;
     margin-left: 8px;
   }
-/*
-  .filter__range--all {
-    display: none;
-  }*/
+
+  .filter__active .filter__range {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
 
   .filter__range--crop,
   .filter__range--fill,
@@ -217,11 +217,6 @@
     display: block;
     width: 202px;
   }
-/*
-  .filter__range {
-    .local-reset();
-    width: 202px;
-  }*/
 
   .filter__range--crop .filter__handle {
     left: 150px;
@@ -276,10 +271,14 @@
   }
 
   .filter__options {
+    //padding-right: 30px;
+  }
+
+  .filter__block {
     padding-right: 30px;
   }
 
-    .filter__name--crop {
+  .filter__name--crop {
     width: 44px;
     height: 44px;
   }

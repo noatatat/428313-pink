@@ -1,8 +1,23 @@
 .tariff {
+  position: relative;
   background-color: @bg-lite;
   padding-top: 92px;
   padding-bottom: 47px;
   text-transform: uppercase;
+}
+
+.tariff::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background-color: @bg-lite;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .tariff__wrapper {
@@ -38,7 +53,6 @@
 
 .tariff__link {
   display: block;
-  /*  ------------разобраться!*/
 }
 
 .tariff__name,
@@ -137,6 +151,10 @@
     padding-bottom: 68px;
   }
 
+  .tariff::before {
+    height: 50px;
+  }
+
   .tariff__wrapper {
     width: @tablet-wrap;
   }
@@ -218,8 +236,12 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
-    padding-top: 145px;
+    padding-top: 142px;
     padding-bottom: 95px;
+  }
+
+  .tariff::before {
+    height: 65px;
   }
 
   .tariff__wrapper {
@@ -237,6 +259,7 @@
 
   .tariff__rate {
     height: 98px;
+    padding-top: 16px;
   }
 
   .tariff__name {

@@ -35,6 +35,7 @@
 
 .download-app__button {
   margin: 28px auto;
+  margin-bottom: 30px;
 }
 
 .download-app__market-list {
@@ -49,22 +50,23 @@
   margin-bottom: 25px;
 }
 
-.download-app__item {
+.download-app__item,
+.download-app__item svg{
   display: block;
-  width: 47px;
-  height: 56px;
 }
 
 .download-app__item--itunes {
-  background: url("../img/logo-apple.svg") 50% 100% no-repeat;
+  //background: url("../img/logo-apple.svg") 50% 100% no-repeat;
 }
 
 .download-app__item--google-play {
-  background: url("../img/logo-android.svg") 50% 100% no-repeat;
+  margin-top: 8px;
+  //background: url("../img/logo-android.svg") 50% 100% no-repeat;
 }
 
 .download-app__item--microsoft-store {
-  background: url("../img/logo-microsoft.svg") 50% 100% no-repeat;
+  margin-top: 12px;
+//  background: url("../img/logo-microsoft.svg") 50% 100% no-repeat;
 }
 
 .download-app__text {
@@ -136,17 +138,19 @@
 
   .download-app__picture {
     margin-top: 0;
+
     min-height: 853px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
-
+    overflow: hidden;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
   .download-app__phone {
-    width: 1050px;
+    min-width: 1050px;
+    height: auto;
     transform: translateX(-453px);
   }
 

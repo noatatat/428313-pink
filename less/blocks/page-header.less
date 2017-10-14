@@ -29,26 +29,56 @@
   border-bottom: 1px solid #000000;
 }
 
-.page-header__logo,
+.page-header__logo /*,
 .page-header__logo picture,
-.page-header__logo img {
+.page-header__logo img*/ {
   display: block;
 }
 
-.page-header__logo img{
-  width: 75px;
-  height: 22px;
+.page-header__logo .glasses,
+.page-header__logo .glasses-broken,
+.page-header__logo .pink,
+.page-header__logo .pink-mobile {
+  fill: white;
 }
 
-.page-header__logo[href] {
-  &:hover .page-header__logo-image,
-  &:focus .page-header__logo-image {
-    fill: @pink-color;
-  }
+.page-header__logo .stars {
+  fill: @pink-color;
+}
 
-  &:active .page-header__logo-image {
-    fill: rgba(255, 255, 255, 0.3);
-  }
+.page-header__logo[href]:hover .glasses,
+.page-header__logo[href]:hover .glasses-broken,
+.page-header__logo[href]:hover .pink,
+.page-header__logo[href]:hover .pink-mobile,
+.page-header__logo[href]:focus .glasses,
+.page-header__logo[href]:focus .glasses-broken,
+.page-header__logo[href]:focus .pink,
+.page-header__logo[href]:focus .pink-mobile {
+  fill: @pink-color;
+}
+
+.page-header__logo[href]:active .glasses,
+.page-header__logo[href]:active .glasses-broken,
+.page-header__logo[href]:active .pink,
+.page-header__logo[href]:active .pink-mobile {
+  fill: white;
+}
+
+.page-header__logo[href]:active {
+  opacity: 0.3;
+}
+
+.page-header__logo {
+  width: 74px;
+  height: 23px;
+  overflow: hidden;
+}
+
+.page-header__logo .glasses,
+.page-header__logo .glasses-broken,
+.page-header__logo .pink,
+.page-header__logo .stars {
+  display: none;
 }
 
 .page-header__toggle {
@@ -86,12 +116,18 @@
   }
 
   .page-header__logo {
+    width: 147px;
+    height: 40px;
     margin-top: -12px;
   }
 
-  .page-header__logo img{
-    width: 147px;
-    height: 40px;
+  .page-header__logo .glasses,
+  .page-header__logo .pink {
+    display: inline-block;
+  }
+
+  .page-header__logo .pink-mobile {
+    display: none;
   }
 }
 
@@ -140,5 +176,14 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__logo .glasses {
+    display: none;
+  }
+
+  .page-header__logo .glasses-broken,
+  .page-header__logo .stars {
+    display: inline-block;
   }
 }

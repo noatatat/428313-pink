@@ -9,7 +9,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  padding: 18px;
+  padding-top: 20px;
+  padding-bottom: 16px;
   width: 280px;
   box-sizing: border-box;
 
@@ -18,6 +19,25 @@
   background-color: @green-color;
 
   cursor: pointer;
+}
+
+.form-button:hover,
+.form-button:focus {
+  border-color: @green-color-hover;
+  background-color: @green-color-hover;
+}
+
+.form-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  border-color: @green-color-hover;
+  background-color: @green-color-hover;
+}
+
+.form-button:disabled {
+  border-color: @border-color;
+  background-color: @border-color;
+
+  cursor: default;
 }
 
 @media (min-width: @tablet-width) {

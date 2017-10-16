@@ -1,16 +1,27 @@
 .tariff {
+  position: relative;
   background-color: @bg-lite;
   padding-top: 92px;
   padding-bottom: 47px;
   text-transform: uppercase;
 }
 
-.tariff__wrapper {
-  width: 320px;
+.tariff::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background-color: @bg-lite;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.tariff__name-table {
-  display: none;
+.tariff__wrapper {
+  width: 320px;
 }
 
 .tariff__list {
@@ -19,6 +30,7 @@
 
 .tariff__item {
   .local-reset();
+  display: block;
   border-collapse: collapse;
   border-spacing: 0;
   border-left: 1px solid @border-color;
@@ -28,17 +40,24 @@
   transform: translateX(-260px);
 }
 
+.tariff__name-table {
+  display: none;
+}
+
 .tariff__rate {
+  display: block;
+  width: 280px;
   height: 98px;
   box-sizing: border-box;
   padding: 17px;
   background-color: @basic-color;
   vertical-align: top;
+  border-left: 1px solid @border-color;
+  border-right: 1px solid @border-color;
 }
 
 .tariff__link {
   display: block;
-  /*  ------------разобраться!*/
 }
 
 .tariff__name,
@@ -69,7 +88,9 @@
   justify-content: space-between;
   align-items: center;
 
+  width: 280px;
   height: 59px;
+  box-sizing: border-box;
   padding: 0 20px;
   background-color: white;
   border-left: 1px solid @border-color;
@@ -137,6 +158,10 @@
     padding-bottom: 68px;
   }
 
+  .tariff::before {
+    height: 50px;
+  }
+
   .tariff__wrapper {
     width: @tablet-wrap;
   }
@@ -154,6 +179,7 @@
   }
 
   .tariff__rate {
+    width: 155px;
     height: 80px;
     padding: 14px;
     padding-bottom: 8px;
@@ -170,9 +196,10 @@
   }
 
   .tariff__feature {
-    justify-content: center;
-
+    width: 155px;
     height: 45px;
+
+    justify-content: center;
   }
 
   .tariff__feature::after {
@@ -184,11 +211,13 @@
   }
 
   .tariff__name-table {
-    display: table;
+    display: block;
   }
 
   .tariff__name-table .tariff__rate {
     background-color: transparent;
+    border-left: 0;
+    border-right: 0;
   }
 
   .tariff__name-table .tariff__feature {
@@ -218,8 +247,12 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
-    padding-top: 145px;
+    padding-top: 142px;
     padding-bottom: 95px;
+  }
+
+  .tariff::before {
+    height: 65px;
   }
 
   .tariff__wrapper {
@@ -236,7 +269,9 @@
   }
 
   .tariff__rate {
+    width: 235px;
     height: 98px;
+    padding-top: 16px;
   }
 
   .tariff__name {
@@ -249,6 +284,7 @@
   }
 
   .tariff__feature {
+    width: 235px;
     height: 60px;
   }
 

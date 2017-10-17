@@ -46,23 +46,37 @@
   cursor: pointer;
 }
 
-.filter__name--crop {
+.filter__name .filter__icon {
+  display: block;
+  fill: #b5b9be;
+}
+
+.filter__name:hover .filter__icon,
+.filter__name:focus .filter__icon {
+  fill: #8d949b;
+}
+
+.filter__name:active {
+  fill: @pink-color;
+}
+
+.filter__name--crop .filter__icon {
   width: 44px;
   height: 44px;
-  background: url("../img/icon-editor-crop.svg") center no-repeat;
 }
 
-.filter__name--fill {
+.filter__name--fill .filter__icon {
   width: 48px;
   height: 43px;
-  background: url("../img/icon-editor-fill.svg") center no-repeat;
 }
 
-.filter__name--contrast {
+.filter__name--contrast{
+  margin-right: 12px;
+}
+
+.filter__name--contrast .filter__icon {
   width: 32px;
   height: 32px;
-  margin-right: 12px;
-  background: url("../img/icon-editor-contrast.svg") center no-repeat;
 }
 
 .filter__range {
@@ -102,6 +116,14 @@
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.filter__active .filter__icon {
+  fill: @pink-color;
+}
+
+.filter__active .filter__handle {
+  background-color: @pink-color;
 }
 
 .filter__buttons {
@@ -183,22 +205,31 @@
   }
 
   .filter__name--crop {
-    width: 22px;
-    height: 22px;
     margin-left: 2px;
   }
 
-  .filter__name--fill {
-    width: 24px;
+  .filter__name--crop .filter__icon {
+    width: 22px;
     height: 22px;
+  }
+
+  .filter__name--fill {
     margin-left: 2px;
     margin-top: 3px;
   }
 
+  .filter__name--fill .filter__icon {
+    width: 24px;
+    height: 22px;
+  }
+
   .filter__name--contrast {
+    margin-left: 8px;
+  }
+
+  .filter__name--contrast .filter__icon {
     width: 16px;
     height: 16px;
-    margin-left: 8px;
   }
 
   .filter__active .filter__range {
@@ -275,21 +306,20 @@
     padding-right: 30px;
   }
 
-  .filter__name--crop {
+  .filter__name--crop .filter__icon {
     width: 44px;
     height: 44px;
   }
 
-  .filter__name--fill {
+  .filter__name--fill .filter__icon {
     width: 48px;
     height: 43px;
   }
 
-  .filter__name--contrast {
+  .filter__name--contrast .filter__icon {
     width: 32px;
     height: 32px;
   }
-
 
   .filter__range {
     width: 288px;

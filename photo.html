@@ -293,7 +293,10 @@
                     <div class="filter__block filter__active">
                       <label class="filter__name filter__name--crop">
                         <span class="visually-hidden">Обрезать изображение</span>
-                        <input class="filter__option-input" type="radio" name="filter" value="filter-crop" checked>
+                        <svg class="filter__icon" width="32" height="32">
+                          <use xlink:href="img/sprite-editor.svg#icon-editor-crop"></use>
+                        </svg>
+                        <input class="filter__option-input" type="radio" name="filter" value="filter-crop">
                       </label>
                       <div class="filter__range filter__range--crop">
                         <div class="filter__scale"></div>
@@ -305,6 +308,9 @@
                     <div class="filter__block">
                       <label class="filter__name filter__name--fill">
                         <span class="visually-hidden">Заливка</span>
+                        <svg class="filter__icon" width="48" height="48">
+                          <use xlink:href="img/sprite-editor.svg#icon-editor-fill"></use>
+                        </svg>
                         <input class="filter__option-input" type="radio" name="filter" value="filter-fill">
                       </label>
                       <div class="filter__range filter__range--fill">
@@ -317,6 +323,9 @@
                     <div class="filter__block">
                       <label class="filter__name filter__name--contrast">
                         <span class="visually-hidden">Контраст</span>
+                        <svg class="filter__icon" width="48" height="48">
+                          <use xlink:href="img/sprite-editor.svg#icon-editor-contrast"></use>
+                        </svg>
                         <input class="filter__option-input" type="radio" name="filter" value="filter-contrast">
                       </label>
                       <div class="filter__range filter__range--contrast">

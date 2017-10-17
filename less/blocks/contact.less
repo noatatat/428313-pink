@@ -1,6 +1,5 @@
 .contact {
   .list-reset();
-
 }
 
 .contact__name,
@@ -17,7 +16,7 @@
 }
 
 .contact__name {
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 
   font-size: 18px;
   line-height: 1.2;
@@ -31,6 +30,32 @@
   line-height: 1.2;
   font-weight: lighter;
   letter-spacing: 0;
+}
+
+.contact__link {
+  position: relative;
+  color: inherit;
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: @basic-color;
+    &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 2px;
+    background-color: @basic-color;
+  }
+}
+
+.contact__link:active {
+  color: #bec2c7;
+  &::after {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {

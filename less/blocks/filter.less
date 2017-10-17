@@ -92,7 +92,9 @@
 }
 
 .filter__handle {
+  .local-reset();
   position: absolute;
+  box-sizing: content-box;
   top: -6px;
   left: 193px;
   height: 10px;
@@ -118,8 +120,12 @@
   transform: translateX(-50%);
 }
 
-.filter__active .filter__icon {
+.filter__active .filter__icon,
+.filter__active:hover .filter__icon,
+.filter__active:focus .filter__icon,
+.filter__active:active .filter__icon {
   fill: @pink-color;
+  cursor: default;
 }
 
 .filter__active .filter__handle {

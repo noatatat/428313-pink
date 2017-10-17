@@ -13,7 +13,7 @@
           <div class="wrapper page-header__wrapper">
             <a class="page-header__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.4" viewBox="0 0 146.3 40.4">
-                <title>Переход на главную страницу</title>
+                <title>Главная страница</title>
                 <g class="glasses">
                   <path d="M60.5 28L55.3 6.6C54.9 4.3 52.7 0 46.7 0c-.8 0-1.5.7-1.5 1.5S45.9 3 46.7 3c4.9 0 5.6 3.7 5.6 4.1l4.8 19.7H55c-.7-5.9-5.8-10.5-11.9-10.5s-11.2 4.6-11.9 10.5h-1.8c-.7-5.9-5.8-10.5-11.9-10.5s-11.3 4.6-12 10.5H3.4L8.2 7.1C8.3 6.7 9 3 13.8 3c.8 0 1.5-.7 1.5-1.5S14.7 0 13.8 0c-6 0-8.2 4.3-8.6 6.7L0 28.1c-.3 1.1.5 1.8 1.4 1.8h4c.7 5.9 5.8 10.5 11.9 10.5s11.2-4.6 11.9-10.5H31c.7 5.9 5.8 10.5 11.9 10.5S54.3 35.8 55 29.8h4c.9 0 1.7-.7 1.5-1.8zm-34.2 1.8c-.7 4.3-4.4 7.5-8.9 7.5S9.2 34 8.5 29.8c-.1-.5-.1-1-.1-1.5s.1-1 .1-1.5c.7-4.3 4.4-7.5 8.9-7.5s8.2 3.3 8.9 7.5c.1.5.1 1 .1 1.5s0 1.1-.1 1.5zm25.7 0c-.7 4.3-4.4 7.5-8.9 7.5s-8.2-3.3-8.9-7.5c-.1-.5-.1-1-.1-1.5s.1-1 .1-1.5c.7-4.3 4.4-7.5 8.9-7.5s8.2 3.3 8.9 7.5c.1.5.1 1 .1 1.5s0 1.1-.1 1.5z"/>
                 </g>
@@ -137,7 +137,7 @@
           <div class="advertisement__block">
             <h3 class="advertisement__title">Эффект <br> на&nbsp;24&nbsp;часа!</h3>
             <p class="advertisement__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
-            <a class="advertisement__link">Узнать больше об исследовании</a>
+            <a href="#" class="advertisement__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -162,13 +162,23 @@
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__text"><span class="review__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="review__quotes">»</span></p>
               </blockquote>
-            <button class="review__button review__button--left"><span class="visually-hidden">Предыдущий отзыв</span></button>
-            <button class="review__button review__button--right"><span class="visually-hidden">Следующий отзыв</span></button>
+            <button class="review__button review__button--left">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+              <svg width="22" height="42" viewBox="0 0 21.706 41.719">
+                <path d="M2.045 20.86L21.458 1.445A.847.847 0 0 0 20.261.247L.25 20.26a.849.849 0 0 0 0 1.198L20.26 41.47a.845.845 0 0 0 1.2 0 .847.847 0 0 0 0-1.197L2.044 20.86z"/>
+              </svg>
+            </button>
+            <button class="review__button review__button--right">
+              <span class="visually-hidden">Следующий отзыв</span>
+              <svg width="22" height="42" viewBox="0 0 21.706 41.719">
+                <path d="M19.66 20.86L.25 1.445A.847.847 0 0 1 1.447.247L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.47a.842.842 0 0 1-1.198 0 .847.847 0 0 1 0-1.197L19.66 20.86z"/>
+              </svg>
+            </button>
             </div>
             <div class="slider__controls">
-                <div class="slider__button slider__button--active"></div>
-                <div class="slider__button"></div>
-                <div class="slider__button"></div>
+              <button class="slider__button" type="button" disabled></button>
+              <button class="slider__button" type="button"></button>
+              <button class="slider__button" type="button"></button>
             </div>
           </div>
         </div>
@@ -279,9 +289,9 @@
               </table>
             </div>
             <div class="tariff__controls slider__controls">
-                <div class="slider__button"></div>
-                <div class="slider__button slider__button--active"></div>
-                <div class="slider__button"></div>
+                <button class="slider__button" type="button"></button>
+                <button class="slider__button slider" type="button" disabled></button>
+                <button class="slider__button" type="button"></button>
             </div>
           </div>
         </div>
@@ -295,11 +305,11 @@
           <ul class="main-footer__contacts contact">
             <li class="contact__item">
               <p class="contact__name">Звоните:</p>
-              <p class="contact__info">+7 (812) 555-66-66</p>
+              <p class="contact__info"><a class="contact__link" href="tel:+78125556666;">+7 (812) 555-66-66</a></p>
             </li>
             <li class="contact__item">
               <p class="contact__name">Пишите:</p>
-              <p class="contact__info">mail@htmlacademy.ru</p>
+              <p class="contact__info"><a class="contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
             </li>
             <li class="contact__item">
               <p class="contact__name">Приезжайте в гости:</p>

@@ -38,6 +38,10 @@
   margin-bottom: 6px;
 }
 
+.form__input {
+  min-height: 62px;
+}
+
 .form__input,
 .form__emotional-text {
   .local-reset();
@@ -64,6 +68,19 @@
   height: 200px;
   resize: none;
 }
+
+.form__input:hover,
+.form__emotional-text:hover {
+  border-color: @basic-color;
+}
+
+.form__input:active,
+.form__input:focus,
+.form__emotional-text:active,
+.form__emotional-text:focus {
+  border-color: @pink-color;
+}
+
 
 .form__achievements,
 .form__application {
@@ -151,6 +168,18 @@
   border: 2px solid @border-color;
   border-radius: 2px;
   background-color: white;
+}
+
+.form__input-checkbox:hover + .form__label-checkbox::before,
+.form__input-radio-button:hover + .form__label-radio-button::before {
+  border-color: @basic-color;
+}
+
+.form__input-checkbox:focus + .form__label-checkbox::before,
+.form__input-checkbox:active + .form__label-checkbox::before,
+.form__input-radio-button:focus + .form__label-radio-button::before,
+.form__input-radio-button:active + .form__label-radio-button::before {
+  border-color: @pink-color;
 }
 
 .form__input-checkbox:checked + .form__label-checkbox::before {
@@ -338,6 +367,7 @@
   .form__contacts .form__field-block {
     position: relative;
     flex-flow: column wrap;
+    align-items: flex-start;
 
     margin-bottom: 29px;
   }

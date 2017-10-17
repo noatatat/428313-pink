@@ -49,10 +49,21 @@
 
   .advertisement__link {
     .local-reset();
+    position: relative;
     color: @pink-color;
     text-decoration: underline;
   }
 }
+
+  .advertisement__link:hover,
+  .advertisement__link:focus {
+    color: @basic-color;
+  }
+
+  .advertisement__link:active {
+    color: #bec2c7;
+  }
+
 
 @media (min-width: @desktop-width) {
   .advertisement {

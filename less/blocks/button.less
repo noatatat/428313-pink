@@ -21,15 +21,50 @@
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: white;
+  color: @pink-color;
+}
+
+.button:active {
+  background-color: white;
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .button--pink {
   color: @pink-color;
   border-color: @pink-color;
+}
+
+.button--pink:hover,
+.button--pink:focus {
+  color: white;
+  background-color: @pink-color;
+}
+
+.button--pink:active {
+  background-color: @pink-color;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--grey {
   color: @border-color;
   border-color: @border-color;
 }
+
+.button--grey:hover,
+.button--grey:focus {
+  color: #b5b9be;
+  border-color: #b5b9be;
+  background-color: transparent;
+}
+
+.button--grey:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #b5b9be;
+}
+
 
 @media (min-width: @tablet-width) {
   .button {

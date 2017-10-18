@@ -14,26 +14,43 @@
 
 .slider__controls {
   width: 56px;
-  margin: 0 auto;
+  margin: -3px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .slider__button {
+  .local-reset();
+  display: block;
+
+  border: 0;
   width: 6px;
   height: 6px;
+  padding: 3px;
+  box-sizing: border-box;
   border-radius: 50%;
   background: #bec2c7;
 
   cursor: pointer;
 }
 
-.slider__button--active {
-  background: transparent;
-  border: 3px solid @basic-color;
+.slider__button:hover,
+.slider__button:focus {
+  background: #7e868f;
 }
 
+.slider__button:active {
+  background: #e9ebec;
+}
+
+.slider__button:disabled {
+  background: transparent;
+  box-sizing: content-box;
+  padding: 0;
+  border: 3px solid @basic-color;
+  cursor: default;
+}
 
 @media (min-width: @tablet-width) {
   .slider__controls {

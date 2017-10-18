@@ -1,6 +1,6 @@
 .review {
   line-height: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 
   background-color: white;
 }
@@ -118,18 +118,33 @@
     position: relative;
   }
 
+  .review__button svg {
+    display: block;
+  }
+
   .review__button {
+    .local-reset();
     display: block;
     position: absolute;
     top: 213px;
 
     width: 22px;
-    height: 41px;
+    height: 42px;
 
-    background: url("../img/icon-review-arrow-left.svg") center no-repeat;
     border: 0;
+    background-color: transparent;
+    fill: #bec2c7;
 
     cursor: pointer;
+  }
+
+  .review__button:hover,
+  .review__button:focus {
+    fill: #7e868f;
+  }
+
+  .review__button:active {
+    fill: #e9ebec;
   }
 
   .review__button--left {
@@ -138,11 +153,14 @@
 
   .review__button--right {
     right: 10px;
-    transform: rotate(180deg);
   }
 
   .review__item {
-    padding: 182px 120px 50px 120px;
+    padding: 185px 120px 50px 120px;
+  }
+
+  .review__quotes {
+    display: none;
   }
 
   .review__author {

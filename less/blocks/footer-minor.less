@@ -24,13 +24,17 @@
   height: 40px;
 }
 
+.footer-minor__link svg {
+  pointer-events: none;
+}
+
 .footer-minor__link .glasses,
- .footer-minor__link .glasses-broken {
+.footer-minor__link .glasses-broken {
   fill: @pink-color;
 }
 
 .footer-minor__link .pink,
- .footer-minor__link .stars {
+.footer-minor__link .stars {
   fill: @basic-color;
 }
 
@@ -39,12 +43,13 @@
   fill: @pink-color;
 }
 
-.footer-minor__link:active .pink {
-  fill: @basic-color;
+.footer-minor__link:active .pink,
+.footer-minor__link:active .stars {
+  fill: @basic-transparent;
 }
 
-.footer-minor__link:active {
-  opacity: 0.3;
+.footer-minor__link:active .glasses-broken {
+  fill: @pink-transparent;
 }
 
 .footer-minor__social-list {
@@ -73,6 +78,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   fill: @pink-color;
+
+  pointer-events: none;
 }
 
 .footer-minor__social:hover,
@@ -107,6 +114,8 @@
   height: 34px;
   margin-top: 5px;
   fill: @pink-color;
+
+  pointer-events: none;
 }
 
 .footer-minor__academy-link:hover .footer-minor__academy-logo,
@@ -115,10 +124,7 @@
 }
 
 .footer-minor__academy-link:active .footer-minor__academy-logo {
-  //fill: @basic-color;
-  fill: green;
-  //opacity: 0.3;
-  pointer-events: none;
+  fill: @basic-transparent;
 }
 
 @media (min-width: @tablet-width) {

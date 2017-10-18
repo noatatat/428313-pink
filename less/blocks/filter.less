@@ -49,6 +49,8 @@
 .filter__name .filter__icon {
   display: block;
   fill: #b5b9be;
+
+  pointer-events: none;
 }
 
 .filter__name:hover .filter__icon,
@@ -56,7 +58,7 @@
   fill: #8d949b;
 }
 
-.filter__name:active {
+.filter__name:active .filter__icon {
   fill: @pink-color;
 }
 

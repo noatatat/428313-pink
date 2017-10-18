@@ -29,6 +29,10 @@
   border-bottom: 1px solid #000000;
 }
 
+.page-header__logo[href] svg{
+  pointer-events: none;
+}
+
 .page-header__logo .glasses,
 .page-header__logo .glasses-broken,
 .page-header__logo .pink,
@@ -58,14 +62,14 @@
   fill: white;
 }
 
-.page-header__logo[href]:active {
-  opacity: 0.3;
+.page-header__logo[href]:active .glasses-broken,
+.page-header__logo[href]:active .pink {
+  fill: @white-transparent;
 }
 
-.page-header__logo[href]:active svg{
-  pointer-events: none;
+.page-header__logo[href]:active .stars {
+  fill: @pink-transparent;
 }
-
 
 .page-header__logo {
   display: block;

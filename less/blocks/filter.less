@@ -108,6 +108,12 @@
   cursor: pointer;
 }
 
+.filter__handle:hover,
+.filter__handle:focus,
+.filter__handle:active {
+  background-color: @pink-color;
+}
+
 .filter__range--crop,
 .filter__range--fill,
 .filter__range--contrast {
@@ -128,10 +134,6 @@
 .filter__active:active .filter__icon {
   fill: @pink-color;
   cursor: default;
-}
-
-.filter__active .filter__handle {
-  background-color: @pink-color;
 }
 
 .filter__buttons {
